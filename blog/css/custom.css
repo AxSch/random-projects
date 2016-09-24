@@ -1,0 +1,427 @@
+/*--Header ---*/
+
+.headernav {
+    height: 70px;
+    border-bottom: 1px solid #c9cccd;
+}
+
+.content {
+    background-color: white;
+    border-top: solid 1px #e0e4e5;
+}
+
+.selecttopic {
+    line-height: 69px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #333333;
+}
+
+.selecttopic select {
+    border: none;
+}
+
+.selecttopic .dropdown-menu {
+    margin-top: -20px;
+}
+
+.headernav .search {
+    color: #333333;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 16px;
+    height: 38px
+}
+
+.headernav .search .wrap {
+    background-color: #f3f5f9;
+    border-radius: 3px;
+}
+
+.headernav .search .txt {
+    width: 85%;
+}
+
+.headernav .search input {
+    border: none;
+    box-shadow: none;
+    background-color: #f3f5f9;
+    color: #333333;
+    font-size: 16px;
+    padding: 8px 19px;
+    height: 38px;
+}
+
+.headernav .search button {
+    border: solid 1px #697683;
+    box-shadow: none;
+    background-color: #697683;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+
+/*--- Avatar CSS --*/
+
+.avt {
+    margin-top: 16px;
+    height: 38px;
+}
+
+.avt button {
+    height: 38px;
+    border: none;
+    box-shadow: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #0085A1;
+}
+
+.avt .btn-primary:hover,
+.avt .btn-primary:focus,
+.avt .btn-primary:active,
+.avt .btn-primary:focus {
+    background-color: #0085A1;
+    border: none;
+    box-shadow: none;
+}
+
+.env {
+    font-size: 18px;
+    color: #cfd5d7;
+    line-height: 38px;
+    padding: 0 20px;
+}
+
+.avatar {
+    position: relative;
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+
+.avatar .status {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    border-radius: 50%;
+    border: solid 2px #ffffff;
+}
+
+.dropdown.avatar .status {
+    right: 14px;
+}
+
+.caretl {
+    color: #333333;
+    font-size: 14px;
+    line-height: 38px;
+    padding: 0 15px;
+}
+
+.avatar .green {
+    background-color: #80d3ab;
+}
+
+.avatar .red {
+    background-color: #f27777;
+}
+
+.avatar .yellow {
+    background-color: #ecd346;
+}
+
+
+/*-------Content--------------*/
+
+
+/*--- Pagination----*/
+
+.paginationforum li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.paginationforum li a {
+    min-width: 24px;
+    height: 24px;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    background-color: #cfd5d7;
+    border-radius: 2px;
+    display: block;
+    padding: 0 8px;
+    line-height: 24px;
+}
+
+.paginationforum li a.active,
+.paginationforum li a:hover,
+.paginationforum li a:focus,
+.paginationforum li a:active {
+    color: #0085A1;
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px #c9cccd;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+.paginationforum {
+    margin: 19px auto;
+    padding: 0;
+}
+
+.prevnext {
+    font-size: 26px;
+    color: #cfd5d7;
+    margin-top: 11px;
+    display: block;
+}
+
+.prevnext .last {
+    margin-left: 20px;
+}
+
+
+/*--- Sidebar ----*/
+
+.sidebarblock {
+    background-color: #f2f2f2;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px #c9cccd;
+    margin-bottom: 20px;
+}
+
+.sidebarblock h3 {
+    color: #333333;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.sidebarblock .divline {
+    height: 1px;
+    line-height: 1px;
+    border-bottom: solid 1px #d9d9d9;
+}
+
+.sidebarblock .blocktxt {
+    padding: 20px;
+}
+
+ul.categories li {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+}
+
+ul.categories {
+    margin: 0;
+    padding: 0;
+}
+
+ul.categories li a {
+    font-size: 14px;
+    color: #333333;
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+}
+
+ul.categories .badge {
+    background-color: #333333;
+    font-size: 12px;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 7px;
+}
+
+.sidebarblock .blocktxt {
+    font-size: 14px;
+    color: #333333;
+    font-family: 'Raleway', sans-serif;
+}
+
+.sidebarblock .blocktxt .smal {
+    font-size: 12px;
+}
+
+
+/*---Post---*/
+
+.post {
+    background-color: #f2f2f2;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px #c9cccd;
+    margin-bottom: 20px;
+}
+
+.post .wrap-ut {
+    width: 85%;
+}
+
+.post .userinfo {
+    width: 15%;
+    padding: 20px 0 15px 15px;
+}
+
+.post .posttext {
+    width: 85%;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: #989c9e;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px
+}
+
+.post .postinfo {
+    width: 15%;
+    border-left: solid 1px #f1f1f1;
+}
+
+.post .avatar {
+    width: 37px;
+    margin-left: 5px;
+}
+
+.post .icons {
+    width: 48px;
+    border-top: solid 1px #f1f1f1;
+    margin-top: 12px;
+    padding-top: 7px;
+}
+
+.post h2 {
+    color: #333333;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.post .comments {
+    border-bottom: solid 1px #f1f1f1;
+    padding: 18px 0 25px 0;
+    text-align: center;
+}
+
+.post .comments .commentbg {
+    background-color: #bdc3c7;
+    border-radius: 2px;
+    display: inline-block;
+    padding: 12px 17px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+}
+
+.post .comments .commentbg .mark {
+    width: 11px;
+    height: 11px;
+    background-color: #bdc3c7;
+    position: absolute;
+    bottom: 0;
+    left: 43%;
+    margin-bottom: -5px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.post .views {
+    border-bottom: solid 1px #f1f1f1;
+    color: #9da6aa;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    line-height: 29px;
+}
+
+.post .views i {
+    font-size: 14px;
+}
+
+.post .time {
+    color: #9da6aa;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    line-height: 29px;
+}
+
+.post .time i {
+    font-size: 14px;
+}
+
+@media (max-width: 767px) {
+    /*--- Extra small devices (less 767px) ---*/
+    /*--- index.html ---*/
+    .container-fluid {
+        padding: 0;
+    }
+    .post .userinfo {
+        width: 30%;
+        padding: 15px 0 15px 15px;
+    }
+    .post .posttext {
+        width: 70%;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .post .comments .commentbg {
+        font-size: 12px;
+        padding: 7px;
+        min-width: 35px;
+    }
+    .post .time i {
+        display: block;
+        margin-top: 5px;
+    }
+    .post .views i {
+        display: block;
+        margin-top: 5px;
+    }
+    .post .comments .commentbg .mark {
+        left: 36%;
+    }
+    .post .time,
+    .post .views,
+    .post .views {}
+    .headernav {
+        height: auto;
+    }
+    .avt {
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .selecttopic select {
+        width: 100%;
+    }
+    .avatar .dropdown-menu {
+        left: auto;
+        right: 0;
+    }
+    .selecttopic .dropdown-menu {
+        margin-top: -20px;
+    }
+    .dropdown.avatar .status {
+        right: 14px;
+    }
+    .dropdown.avatar b.caret {
+        color: #363838;
+    }
+}
