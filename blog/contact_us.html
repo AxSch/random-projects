@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body class="fixed-header">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation">
@@ -77,55 +77,108 @@
     </header>
     <!-- end of Header-->
 
-    <!-- Form -->
-    <form id="form" class="topBefore">
+    <!-- Form 
+    <form action="" method="POST" id="form" class="topBefore">
 
-        <input id="name" type="text" placeholder="Name">
-        <input id="email" type="text" placeholder="E-mail">
-        <textarea id="message" type="text" placeholder="Message"></textarea>
-        <input id="submit" type="submit" value="Go!">
+        <fieldset>
+            <legend>
+                <span class="number">1</span>Your Details
+            </legend>
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name">
 
-    </form>
-</body>
+            <label for="mail">Email:</label>
+            <input id="email" type="text" name="email">
 
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                    <li>
-                        <a href="#">
-                            <span class="fa-stack fa-lg">
+            <label for="message">Message:</label>
+            <textarea id="message" type="text" name="message"></textarea>
+
+        </fieldset>
+        <button id="submit" type="submit">Send</button>
+
+    </form>-->
+
+    <div class="register-container sm-p-30">
+        <div class="container-sm-height">
+            <div class="row row-sm-height">
+                <div class="col-sm-12 col-sm-height col-middle">
+                    <h3>Contact Us</h3>
+                    <p>
+                        <small>
+                          Feel free to contact us and we hope to reply to your message as quickly as we can.  
+                        </small>
+                    </p>
+                    <!-- Start of Form Control 1-->
+                    <form id="form- register" class="p-t-15" role="form" action="">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default">
+                                    <label>Name</label>
+                                    <input type="text" name="contactName" placeholder="Enter your Name" class="form-control">
+                                </div>
+                            </div>
+                            <!-- End of the Form Control 1 -->
+                            <!-- Start of Form Control 2 -->
+                            <div class="col-sm-6">
+                                <div class="form-group form-group-default">
+                                    <label>Email</label>
+                                    <input type="email" name="contactName" placeholder="Enter your email address" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Start of the Form Control 3 -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <label>Message</label>
+                                <textarea id="message" type="text" name="message" class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
                                                 <i class="fa fa-circle fa-stack-2x"></i>
                                                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                                             </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="fa-stack fa-lg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
                                             <i class ="fa fa-circle fa-stack-2x"></i>
                                             <i class ="fa fa-instagram fa-stack-1x fa-inverse"></i>
                                         </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="fa-stack fa-lg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
                                             <i class ="fa fa-circle fa-stack-2x"></i>
                                             <i class ="fa fa-twitter fa-stack-1x fa-inverse"></i>
                                         </span>
-                        </a>
-                    </li>
-                </ul>
-                <p class="copyright text-muted">Copyright &copy; Project Ragnarok: State Of Mind 2016</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Project Ragnarok: State Of Mind 2016</p>
+                </div>
+                <!--end footer -->
             </div>
-            <!--end footer -->
+            <!--end row -->
         </div>
-        <!--end row -->
-    </div>
-    <!--end container-->
-</footer>
+        <!--end container-->
+    </footer>
+</body>
 
 </html>

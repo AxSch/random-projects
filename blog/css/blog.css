@@ -1,9 +1,22 @@
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     /*padding-top: 70px;
     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    height:100%;
+    margin:0;
+    padding:0;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
+    background-color: #eef0f0;
     color: #8c8c8c;
+    direction: ltr;
 }
 
 p {
@@ -649,7 +662,7 @@ textarea::-webkit-input-placeholder {
     font-size: 0.875em;
 }
 
-input:focus::-input-placeholder,
+input:focus::-webkit-input-placeholder,
 textarea:focus::-webkit-input-placeholder {
     color: #bbb5af;
 }
@@ -683,7 +696,7 @@ textarea::-ms-placeholder {
 }
 
 input:focus::-ms-input-placeholder,
-textarea:focus::-ms-placeholder {
+textarea:focus::-ms-input-placeholder {
     color: #bbb5af;
 }
 
@@ -734,15 +747,24 @@ textarea:hover::focus:-ms-placeholder {
     color: #cbc6c1;
 }
 
-#form {
+
+/*#form {
     position: relative;
     width: 500px;
     margin: 50px auto 100px auto;
+}*/
+
+form {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
 }
 
 input {
     font-family: 'Raleway', sans-serif;
-    font-size: 0.875em;
+    /*font-size: 0.875em;
     width: 470px;
     height: 50px;
     padding: 0px 15px 0px 15px;
@@ -750,7 +772,19 @@ input {
     outline: none;
     color: #726659;
     border: solid 1px #b3aca7;
-    border-bottom: none;
+    border-bottom: none;*/
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -763,7 +797,7 @@ input:hover {
 }
 
 textarea {
-    width: 470px;
+    /*width: 470px;
     max-width: 470px;
     height: 110px;
     max-height: 110px;
@@ -772,7 +806,19 @@ textarea {
     outline: none;
     color: #726659;
     font-family: 'Raleway', sans-serif;
-    font-size: 0.875em;
+    font-size: 0.875em;*/
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
     border: solid 1px #b3aca7;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -786,7 +832,7 @@ textarea:hover {
 }
 
 #submit {
-    width: 470px;
+    /*width: 470px;
     padding: 0;
     margin: -5px 0px 0px 0px;
     font-family: 'Raleway', sans-serif;
@@ -795,11 +841,68 @@ textarea:hover {
     outline: none;
     cursor: pointer;
     border: solid 1px #b3aca7;
-    border-top: none;
+    border-top: none;*/
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #0085A1;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #00aacc;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    margin-bottom: 10px;
 }
 
 #submit:hover {
     color: #e2dedb;
+}
+select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    border: none;
+}
+
+legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+label .light {
+    font-weight: 300;
+    display: inline;
+}
+
+.number {
+    background-color: #00aacc;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+}
+
+@media screen and (min-width:480px) {
+    form {
+        max-width: 480px;
+    }
 }
 
 

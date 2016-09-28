@@ -76,98 +76,120 @@
         </div>
     </header>
     <!-- end of Header-->
-    <!--Login form in modal -->
 
-    <div id="login-overlay" class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Login to site.com</h4>
-            </div>
-            <div class="modal-body">
+    <!--Login form -->
+    <!--<form action="" method="POST">
+
+        <fieldset>
+            <legend>
+                <span class="number">1</span>Login
+            </legend>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email">
+
+        </fieldset>
+        <button id="submit" type="submit">Login</button>
+        <p>Not a member?<a href="sign_up.html">Register Here</a></p>
+    </form>-->
+
+    <div class="login-container bg-white">
+        <div class="p-l-50 m-l-20 p-r-50 m-r-20 p-t-50 m-t-30 sm-p-l-15 sm-p-r-15 sm-p-t-40">
+            <h3>Sign into Project: Ragnarok</h3>
+            <!--Start Login form-->
+            <form id="form-login" class="p-t-15" role="form" action="">
+                <!-- Form control -->
+                <div class="form-group form-group-default">
+                    <label>Login</label>
+                    <div class="controls">
+                        <input type="email" name="userMail" placeholder="you@mail.com" class="form-control" required>
+                    </div>
+                </div>
+                <!-- End of Form Control -->
+                <!-- Form Control 2 -->
+                <div class="form-group form-group-default">
+                    <label>Password</label>
+                    <div class="controls">
+                        <input type="password" class="form-control" name="password" placeholder="*******" required>
+                    </div>
+                </div>
+                <!--End of form control 2 -->
+                <!-- Form Control 3 -->
                 <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <div class="well">
-                            <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
-                                <div class="form-group">
-                                    <label for="username" class="control-label">Username</label>
-                                    <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
-                                    <span class="help-block"></span>
-                                </div>
-                                <div class="form-group">
-                                    <label for="password" class="control-label">Password</label>
-                                    <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
-                                    <span class="help-block"></span>
-                                </div>
-                                <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
-                                <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" name="remember" id="remember">Remember login
-                                </label>
-                                    <p class="help-block"></p>
-                                </div>
-                                <button type="submit" class="btn btn-success btn-block">Login</button>
-                                <a href="/forgot/" class="btn btn-default btn-block">Help to login</a>
-                            </form>
+                    <div class="col-md-6 no-padding">
+                        <div class="checkbox">
+                            <input type="checkbox" value="1" id="checkbox1">
+                            <label for="checkbox1">Keep Me Logged in</label>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">Register now for <span class="text-success">FREE</span></p>
-                        <ul class="list-unstyled" style="line-height: 2">
-                            <li><span class="fa fa-check text-success"></span> See all your orders</li>
-                            <li><span class="fa fa-check text-success"></span> Fast re-order</li>
-                            <li><span class="fa fa-check text-success"></span> Save your favorites</li>
-                            <li><span class="fa fa-check text-success"></span> Fast checkout</li>
-                            <li><span class="fa fa-check text-success"></span> Get a gift <small>(only new customers)</small></li>
-                            <li><a href="/read-more/"><u>Read more</u></a></li>
-                        </ul>
-                        <p><a href="/new-customer/" class="btn btn-info btn-block">Yes please, register now!</a></p>
+                    <div class="col-md-6 text-right">
+                        <a href="sign_up.html" class="text-info small">Not Registered? Sign Up Here!</a>
+                    </div>
+                </div>
+                <!--End of Form Control 3 -->
+                <button class="btn btn-primary btn-cons m-t-10" type="submit">Sign In</button>
+            </form>
+            <!--END of Login Form -->
+            <div class="pull-bottom sm-pull-bottom">
+                <div class="m-b-30 p-r-80 sm-m-t-20 sm-p-r-15 sm-p-b-20 clearfix">
+                    <div class="col-sm-9 no padding m-t-10">
+                        <p>
+                            <small>Alternatively login using a Facebook or Google+ account.
+                            <a href="#" class="text-info">Facebook</a> or <a href="#" class="text-info">Google</a>
+                        </small>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-</body>
 
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                    <li>
-                        <a href="#">
-                            <span class="fa-stack fa-lg">
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
                                                 <i class="fa fa-circle fa-stack-2x"></i>
                                                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                                             </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="fa-stack fa-lg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
                                             <i class ="fa fa-circle fa-stack-2x"></i>
                                             <i class ="fa fa-instagram fa-stack-1x fa-inverse"></i>
                                         </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="fa-stack fa-lg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
                                             <i class ="fa fa-circle fa-stack-2x"></i>
                                             <i class ="fa fa-twitter fa-stack-1x fa-inverse"></i>
                                         </span>
-                        </a>
-                    </li>
-                </ul>
-                <p class="copyright text-muted">Copyright &copy; Project Ragnarok: State Of Mind 2016</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Project Ragnarok: State Of Mind 2016</p>
+                </div>
+                <!--end footer -->
             </div>
-            <!--end footer -->
+            <!--end row -->
         </div>
-        <!--end row -->
-    </div>
-    <!--end container-->
-</footer>
+        <!--end container-->
+    </footer>
+
+</body>
 
 </html>
