@@ -19,7 +19,7 @@ body {
     direction: ltr;
 }
 
-p { 
+p {
     display: block;
     font-size: 16px;
     line-height: 22px;
@@ -53,14 +53,13 @@ a {
     text-shadow: none !important;
     color: #333333;
     transition: color 0.1s linear 0s, background-color 0.1s linear 0s, opacity 0.2s linear 0s !important;
-
 }
 
 a:hover,
 a:focus {
     color: #0085A1;
     outline: 0 !important;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 a img:hover,
@@ -68,7 +67,7 @@ a img:focus {
     cursor: zoom-in;
 }
 
-br{
+br {
     line-height: normal;
     clear: both;
 }
@@ -84,7 +83,6 @@ hr.small {
     border-width: 4px;
     border-color: #d5dadb;
 }
-
 
 .navbar-custom {
     position: absolute;
@@ -106,7 +104,7 @@ hr.small {
     font-size: 14px;
 }
 
-.navbar-toggle{
+.navbar-toggle {
     border-radius: 0;
     background-color: transparent !important;
 }
@@ -491,33 +489,32 @@ body {
     -webkit-tap-highlight-color: #0085A1;
 }
 
+
 /*--Page Loader---Needs Finishing---*/
 
-.pace .pace-progress{
+.pace .pace-progress {
     background: #0085A1;
     height: 3px;
 }
 
-.pace .pace-progress-inner{
-    box-shadow:none;
+.pace .pace-progress-inner {
+    box-shadow: none;
 }
 
-.pace .pace-activity{
-    -webkit-animation:none;
-    animation:none;
-    top:73px;
+.pace .pace-activity {
+    -webkit-animation: none;
+    animation: none;
+    top: 73px;
     background: url() no-repeat top left;
     background-size: 100% auto;
     margin: 0 auto;
-    border-width:0;
-    border-radius:0;
-    width:28px;
-    height:40px;
+    border-width: 0;
+    border-radius: 0;
+    width: 28px;
+    height: 40px;
     right: 19px;
     left: auto;
-
 }
-
 
 
 /*--Archive CSS ---*/
@@ -526,7 +523,6 @@ body {
     height: 70px;
     border-bottom: 1px solid #c9cccd;
 }
-
 
 .content {
     background-color: white;
@@ -1033,7 +1029,7 @@ ul.categories .badge {
 }
 
 
-/*---Post---*/
+/*---Post html---*/
 
 .post {
     background-color: #f2f2f2;
@@ -1175,7 +1171,7 @@ ul.categories .badge {
         left: 36%;
     }
     .post .time,
-    .post .views,
+    .post.views,
     .post .views {}
     .headernav {
         height: auto;
