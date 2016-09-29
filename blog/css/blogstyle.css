@@ -1,0 +1,491 @@
+/*--Project Ragnarok theme
+
+v.0.0.2
+Theme:Default
+
+Contents:
+1. Layouts
+2. Typography
+3. Buttons
+4. Form Elements
+5. Lists
+
+---Pages---
+1. Index
+2. Login
+3. Register
+4. Archive
+5. Contact_Us
+6. Blog_Post
+7. Blog Post template
+
+----*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:900|Raleway);
+html {
+    height: 100%;
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+/*--1. Layouts---
+-----------------------------------
+*/
+
+
+/*--Body--*/
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #eef0f0;
+    direction: ltr;
+    letter-spacing: 0.01em;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*---paragraphs and text areas ---*/
+
+p {
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+    margin: 30px 0;
+    letter-spacing: 0.01em;
+}
+
+small,
+.small {
+    line-height: 18px;
+}
+
+br {
+    line-height: normal;
+    clear: both;
+}
+
+blockquote {
+    color: #777777;
+    font-style: italic;
+}
+
+
+/*---Headings----*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 10px 0;
+    font-family: 'Lato', sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: -0.08px;
+}
+
+h2 {
+    font-size: 31px;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 27px;
+    line-height: 35px;
+}
+
+h4 {
+    font-size: 22px;
+    line-height: 31.88px;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 25.88px;
+}
+
+h3 small,
+h4 small,
+h5 small {
+    font-weight: 300;
+}
+
+h1.block,
+h2.block,
+h3,
+block,
+h4.block,
+h5.block,
+h6.block {
+    padding-bottom: 10px;
+}
+
+
+/*----Links-----*/
+
+a {
+    text-shadow: none !important;
+    color: #333333;
+    transition: color 0.1s linear 0s, background-color 0.1s linear 0s, opacity 0.2s linear 0s !important;
+}
+
+a:focus,
+a:hover,
+a:active {
+    color: #0085A1;
+}
+
+a,
+a:focus,
+a:hover,
+a:active {
+    outline: 0 !important;
+    text-decoration: none;
+}
+
+
+/*---Header---
+-Pages: Index, User page, AboutUS, Contact Us, Archive, Mindspace*/
+
+.intro-header {
+    position: relative;
+    display: block;
+    height: 60px;
+    width: 100%;
+    padding: 0 20px 0 0;
+    z-index: 800;
+    background-color: #777777;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-bottom: 1px solid rgb(213, 218, 0.7);
+    margin-bottom: 20px;
+}
+
+.intro-header .site-heading,
+.intro-header .post-heading,
+.intro-header .page-heading {
+    padding: 100px 0 50px;
+    color: white;
+}
+
+
+/*---Mobile, Tablet and desktop need to be described---*/
+
+
+/*------------------------------------*/
+
+
+/*---2. Typography---
+--------------
+*/
+
+label.inline {
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    font-size: 13px;
+}
+
+ul>li {
+    padding-left: 3px;
+    line-height: 24px;
+}
+
+hr {
+    border-color: #d5dadb;
+}
+
+hr.double {
+    border-width: 2px;
+}
+
+
+/*--Font Size and Weight overrides---*/
+
+
+/*---Size---*/
+
+.small-text {
+    font-size: 12px !important;
+}
+
+.normal-text {
+    font-size: 13px !important;
+}
+
+.large-text {
+    font-size: 15px !important;
+}
+
+
+/*--Weight ---*/
+
+.normal {
+    font-weight: normal;
+}
+
+.semi-bold {
+    font-weight: 400 !important;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.light {
+    font-weight: 300 !important;
+}
+
+.all-caps {
+    text-transform: uppercase;
+}
+
+.muted {
+    color: #d9e0e2;
+}
+
+.hint-text {
+    opacity: 0.7;
+}
+
+.no-decoration {
+    text-decoration: none !important;
+}
+
+
+/*---3. Buttons---
+--------------
+*/
+
+.btn {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    margin-bottom: 0;
+    border: 1px solid;
+    background-color: #0085A1;
+    color: white;
+    box-shadow: none;
+    text-shadow: none;
+    line-height: 21px;
+    padding-left: 17px;
+    padding-right: 17px;
+    position: relative;
+    transition: color 0.1s linear 0s, background-color 0.2s linear 0s, opacity 0.2s linear 0s !important;
+}
+
+.btn:hover {
+    background-color: #0095b3;
+    border: 1px solid rgba(81, 100, 107, 0.27);
+}
+
+.btn-active {
+    border-color: #00404d;
+    background: #00aacc;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    outline: none !important;
+    outline-style: none;
+}
+
+.btn .caret {
+    margin-left: 3px;
+}
+
+.btn .caret.single {
+    margin-left: 0px;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+    box-shadow: none;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+
+/*--Button Sizes ---*/
+
+.btn-lg,
+.btn-group-lg>.btn {
+    padding-left: 28px;
+    padding-right: 28px;
+    line-height: 23px;
+}
+
+
+/*
+Dropdown Menus - might require updating
+----------------------
+*/
+
+.btn-group.open .dropdown-toggle,
+.open .dropdown-toggle,
+.open.dropdownn-default .dropdown-toggle {
+    box-shadow: none;
+}
+
+.dropdown-default {
+    display: inline-block;
+}
+
+
+/*--------------------------------*/
+
+
+/*--Form elements---*/
+
+label,
+input,
+button,
+select,
+textarea {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-top: 1px 0 0;
+    line-height: normal;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+select[multiple],
+select[size] {
+    height: auto !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+form legend {
+    margin: 15px 0px 10px 0px;
+}
+
+.form-control {
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    font-family: 'Raleway', sans-serif;
+    -webkit-appearance: none;
+    color: #242d30;
+    outline: 0;
+    height: 35px;
+    padding: 9px 12px;
+    line-height: normal;
+    font-size: 14px;
+    font-weight: normal;
+    vertical-align: middle;
+    min-height: 35px;
+    -webkit-transition: all 0.12s ease;
+    transition: all 0.12s ease;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-transition: background 0.2s linear 0s;
+    transition: background 0.2s linear 0s;
+}
+
+.form-control:focus {
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: #e5e8e9;
+    outline: 0 !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.form-control:focus::-moz-placeholder {
+    color: inherit;
+    opacity: 0.7;
+}
+
+.form-control:focus:-ms-input-placeholder {
+    color: inherit;
+    opacity: 0.7;
+}
+
+.form-control:focus::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.7;
+}
+
+.form-control::-moz-placeholder {
+    color: inherit;
+    opacity: 0.33;
+}
+
+.form-control:-ms-input-placeholder {
+    color: inherit;
+    opacity: 0.33;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.33;
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+    background: #f2f3f4;
+    color: rgba(81, 100, 107, 0.23);
+}
+
+.form-control.transparent {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.form-control.transparent:focus {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+/*---Input Sizes ----*/

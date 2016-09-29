@@ -9,9 +9,9 @@
 body {
     /*padding-top: 70px;
     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    height:100%;
-    margin:0;
-    padding:0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     background-color: #eef0f0;
@@ -19,13 +19,21 @@ body {
     direction: ltr;
 }
 
-p {
-    line-height: 1.5s;
+p { 
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
     margin: 30px 0;
+    letter-spacing: 0.01em;
 }
 
 p a {
     text-decoration: underline;
+}
+
+small,
+.small {
+    line-height: 18px;
 }
 
 h1,
@@ -35,20 +43,34 @@ h4,
 h5,
 h6 {
     font-family: 'Lato', sans-serif;
+    margin: 10px 0;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-weight: 300;
 }
 
 a {
+    text-shadow: none !important;
     color: #333333;
+    transition: color 0.1s linear 0s, background-color 0.1s linear 0s, opacity 0.2s linear 0s !important;
+
 }
 
 a:hover,
 a:focus {
     color: #0085A1;
+    outline: 0 !important;
+    text-decoration:none;
 }
 
 a img:hover,
 a img:focus {
     cursor: zoom-in;
+}
+
+br{
+    line-height: normal;
+    clear: both;
 }
 
 blockquote {
@@ -60,8 +82,9 @@ hr.small {
     max-width: 100px;
     margin: 15px auto;
     border-width: 4px;
-    border-color: white;
+    border-color: #d5dadb;
 }
+
 
 .navbar-custom {
     position: absolute;
@@ -81,6 +104,11 @@ hr.small {
     font-weight: 800;
     text-transform: uppercase;
     font-size: 14px;
+}
+
+.navbar-toggle{
+    border-radius: 0;
+    background-color: transparent !important;
 }
 
 .navbar-custom .nav li a {
@@ -110,6 +138,9 @@ hr.small {
     .navbar-custom .nav li a:hover,
     .navbarcustom .nav li a:focus {
         color: rgba(255, 255, 255, 0.8);
+    }
+    .nav-collapse.collapse {
+        height: 100% !important;
     }
 }
 
@@ -460,6 +491,34 @@ body {
     -webkit-tap-highlight-color: #0085A1;
 }
 
+/*--Page Loader---Needs Finishing---*/
+
+.pace .pace-progress{
+    background: #0085A1;
+    height: 3px;
+}
+
+.pace .pace-progress-inner{
+    box-shadow:none;
+}
+
+.pace .pace-activity{
+    -webkit-animation:none;
+    animation:none;
+    top:73px;
+    background: url() no-repeat top left;
+    background-size: 100% auto;
+    margin: 0 auto;
+    border-width:0;
+    border-radius:0;
+    width:28px;
+    height:40px;
+    right: 19px;
+    left: auto;
+
+}
+
+
 
 /*--Archive CSS ---*/
 
@@ -467,6 +526,7 @@ body {
     height: 70px;
     border-bottom: 1px solid #c9cccd;
 }
+
 
 .content {
     background-color: white;
@@ -859,6 +919,7 @@ textarea:hover {
 #submit:hover {
     color: #e2dedb;
 }
+
 select {
     padding: 6px;
     height: 32px;
