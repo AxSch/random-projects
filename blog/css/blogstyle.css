@@ -3017,6 +3017,11 @@ img::-moz-selection {
 -----------
 2. Archive CSS --*/
 
+.headernav {
+    height: 70px;
+    border-bottom: 1px solid #c9cccd;
+}
+
 
 /*----------------------------------
 -----------
