@@ -2,82 +2,77 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Project Ragnarok: State Of Mind</title>
-
-    <!--Bootstrap Core CSS -->
+    <title>Test Forum</title>
+    <!---Bootstrap-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
+    <!---Main Style -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="css/blogstyle.css" rel="stylesheet">
-
     <!--Fonts-->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!--Needs doing after structures done -->
-
 </head>
 
+<body>
+    <!-- Navigation -->
+    <!--  removed role="navigation" by http://www.crispedge.com -->
+    <nav id="header" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!--Toggle navigation for mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar">
+          <span class="sr-only">Toggle navigation</span>
+          Menu<i class="fa fa-bars"></i>
+        </button>
+                <a class="navbar-brand" href="index.html">Project Ragnarok</a>
+            </div>
+            <!-- The nav links - forms and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="login_page.html">Login</a>
+                    </li>
 
+                    <li>
+                        <a href="textarchive.html">MindSpace</a>
+                    </li>
 
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-        <!--Toggle navigation for mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        Menu<i class="fa fa-bars"></i>
-                </button>
-            <a class="navbar-brand" href="index.html">Project Ragnarok</a>
+                    <li>
+                        <a href="#">ThoughtTalk</a>
+                    </li>
+
+                    <li>
+                        <a href="about_us.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="contact_us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- navbar-collapse -->
         </div>
-        <!-- The nav links - forms and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-navbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="login_page.html">Login</a>
-                </li>
+        <!-- div -container -->
+    </nav>
 
-                <li>
-                    <a href="textarchive.html">Archive</a>
-                </li>
-
-                <li>
-                    <a href="#">MindSpace</a>
-                </li>
-
-                <li>
-                    <a href="about_us.html">About Us</a>
-                </li>
-
-                <li>
-                    <a href="contact_us.html">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-        <!-- navbar-collapse -->
-    </div>
-    <!-- div -container -->
-</nav>
-
-<!--Blog Header with background image-->
-<header class="intro-header" style="background-image: url('images/smiley-1171304_1920.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>Project Ragnarok: Login</h1>
-                    <hr class="small">
+    <!--Blog Header with background image-->
+    <header class="intro-header" style="background-image: url('images/smiley-1171304_1920.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Project Ragnarok: The Archive</h1>
+                        <hr class="small">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</header>
-<!-- end of Header-->
+    </header>
+    <!-- end of Header-->
 
-<body class="fixed-header">
+    <!---<body class="fixed-header">--->
     <div class="register-container sm-p-30">
         <div class="container-sm-height">
             <div class="row row-sm-height">
@@ -132,7 +127,6 @@
 
         </div>
     </div>
-    <hr>
 
 
 
@@ -183,6 +177,29 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/headeroom.js"></script>
+
+    <script>
+        jQuery(document).ready(function() {
+            (function() {
+                var header = document.querySelector("#header");
+
+                if (window.location.hash) {
+                    header.classList.add("headroom--unpinned");
+                }
+
+                var headroom = new Headroom(header, {
+                    tolerance: {
+                        down: 10,
+                        up: 20
+                    },
+                    offset: 205
+                });
+                headroom.init();
+
+            }());
+        });
+    </script>
 
 </body>
 
