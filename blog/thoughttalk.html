@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <title>Project Ragnarok: ThoughtTalk</title>
+    <!--Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--Main Style -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link href="css/blogstyle.css" rel="stylesheet">
+    <!--Custom Style --->
+    <link rel="stylesheet" href="css/sidebar.css">
+    <!--Fonts--->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <!--  removed role="navigation" by http://www.crispedge.com -->
+    <nav id="header" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!--Toggle navigation for mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar">
+          <span class="sr-only">Toggle navigation</span>
+          Menu<i class="fa fa-bars"></i>
+        </button>
+                <a class="navbar-brand" href="index.html">Project Ragnarok</a>
+            </div>
+            <!-- The nav links - forms and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="login_page.html">Login</a>
+                    </li>
+
+                    <li>
+                        <a href="textarchive.html">MindSpace</a>
+                    </li>
+
+                    <li>
+                        <a href="thoughttalk.html">ThoughtTalk</a>
+                    </li>
+
+                    <li>
+                        <a href="about_us.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="contact_us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- navbar-collapse -->
+        </div>
+        <!-- div -container -->
+    </nav>
+
+    <!--Blog Header with background image-->
+    <header class="intro-header" style="background-image: url('images/smiley-1171304_1920.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Project Ragnarok: The Archive</h1>
+                        <hr class="small">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end of Header-->
+
+    <div class="headernav">
+        <div class="container">
+            <div class="row">
+                <!--  removed col-md-2 as col-sm-2 is there and col-lg-1 by http://www.crispedge.com bootlint -->
+                <div class="col-xs-6 col-sm-1 logo">
+                    <a href="#">
+                        <img src="http://lorempixel.com/40/40" class="img-responsive" alt="dumm image">
+                    </a>
+                </div>
+                <!--  removed col-lg-3 as col-md-3 is there by http://www.crispedge.com bootlint -->
+                <div class="col-xs-6 col-sm-2 selecttopic">
+                    <div class="dropdown">
+                        <a data-toggle="dropdown" href="#">Categories 2</a>
+                        <b class="caret"></b>
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">Categories 1</a>
+                            </li>
+
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-2" href="#">Categories 2</a>
+                            </li>
+
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-3" href="#">Categories 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 search">
+                    <div class="wrap">
+                        <!-- Removed the complete form which you were
+		  using as its not needed any more so i have
+		  use bootstrap's input-group by http://www.crispedge.com -->
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Go!</button>
+              </span>
+                        </div>
+                        <!-- /input-group -->
+                    </div>
+                </div>
+                <!--  removed col-lg-4 as col-md-4 is there by http://www.crispedge.com bootlint -->
+                <div class="col-xs-12 col-sm-5 avt text-center">
+
+                    <form action="#" method="POST" class="form">
+                        <!--  added type attribute in button element http://www.crispedge.com bootlint -->
+                        <button type="button" class="btn btn-lg btn-primary ">Create New Post</button>
+                    </form>
+
+                    <!--<div class="env pull-left">
+                            <i class="fa fa-fa-envelope"></i>
+                        </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Library</a>
+                    </li>
+                    <li class="active">Data</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- testing with grids --->
+
+    <div class="container">
+
+        <div class="row">
+            <h2>Latest Thoughts</h2>
+            <hr>
+            <section id="thoughtfeed">
+
+                <article class="white-panel">
+                    <div class="thumbnail">
+                        <img src="http://i.imgur.com/sDLIAZD.png" alt="">
+                        <p class="text-overlay">giat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                    </div>
+                </article>
+
+                <article class="white-panel"> <img src="http://i.imgur.com/8lhFhc1.gif" alt="">
+                    <h4><a href="#">Title 2</a></h4>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </article>
+
+                <article class="white-panel"> <img src="http://i.imgur.com/xOIMvAe.jpg" alt="">
+                    <h4><a href="#">Title 3</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </article>
+
+
+                <article class="white-panel"> <img src="http://i.imgur.com/3gXW3L3.jpg" alt="">
+                    <h4><a href="#">Title 4</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </article>
+
+                <article class="white-panel"> <img src="http://i.imgur.com/o2RVMqm.jpg" alt="">
+                    <h4><a href="#">Title 5</a></h4>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </article>
+
+                <article class="white-panel"> <img src="http://i.imgur.com/kFFpuKA.jpg" alt="">
+                    <h4><a href="#">Title 6</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </article>
+
+
+
+                <article class="white-panel"><img src="http://i.imgur.com/E9RmLPA.jpg" alt="">
+                    <h4><a href="#">Title 7</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </article>
+
+                <article class="white-panel"> <img src="http://i.imgur.com/8lhFhc1.gif" alt="">
+                    <h4><a href="#">Title 8</a></h4>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </article>
+
+            </section>
+            <!--Page selection -->
+            <ul class="pager">
+                <li class="next">
+                    <a href="#">More &rarr;</a>
+                </li>
+
+            </ul>
+
+            <hr>
+
+
+        </div>
+
+    </div>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Project Ragnarok: State Of Mind 2016</p>
+                </div>
+                <!--end footer -->
+            </div>
+            <!--end row -->
+        </div>
+        <!--end container-->
+    </footer>
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/headeroom.js"></script>
+    <script>
+        $(function() {
+            $('[data-toggle="popover"]').popover()
+        });
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+    </script>
+    <script>
+        jQuery(document).ready(function() {
+            (function() {
+                var header = document.querySelector("#header");
+
+                if (window.location.hash) {
+                    header.classList.add("headroom--unpinned");
+                }
+
+                var headroom = new Headroom(header, {
+                    tolerance: {
+                        down: 10,
+                        up: 20
+                    },
+                    offset: 205
+                });
+                headroom.init();
+
+            }());
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#thoughtfeed').pinterest_grid({
+                no_columns: 4,
+                padding_x: 10,
+                padding_y: 10,
+                margin_bottom: 50,
+                single_column_breakpoint: 700
+            });
+        });
+
+        /*
+        Ref:
+        Thanks to:
+        http://www.jqueryscript.net/layout/Simple-jQuery-Plugin-To-Create-Pinterest-Style-Grid-Layout-Pinterest-Grid.html
+        */
+
+
+        /*
+            Pinterest Grid Plugin
+            Copyright 2014 Mediademons
+            @author smm 16/04/2014
+
+            usage:
+
+             $(document).ready(function() {
+
+                $('#blog-landing').pinterest_grid({
+                    no_columns: 4
+                });
+
+            });
+
+
+        */
+        ;
+        (function($, window, document, undefined) {
+            var pluginName = 'pinterest_grid',
+                defaults = {
+                    padding_x: 10,
+                    padding_y: 10,
+                    no_columns: 3,
+                    margin_bottom: 50,
+                    single_column_breakpoint: 700
+                },
+                columns,
+                $article,
+                article_width;
+
+            function Plugin(element, options) {
+                this.element = element;
+                this.options = $.extend({}, defaults, options);
+                this._defaults = defaults;
+                this._name = pluginName;
+                this.init();
+            }
+
+            Plugin.prototype.init = function() {
+                var self = this,
+                    resize_finish;
+
+                $(window).resize(function() {
+                    clearTimeout(resize_finish);
+                    resize_finish = setTimeout(function() {
+                        self.make_layout_change(self);
+                    }, 11);
+                });
+
+                self.make_layout_change(self);
+
+                setTimeout(function() {
+                    $(window).resize();
+                }, 500);
+            };
+
+            Plugin.prototype.calculate = function(single_column_mode) {
+                var self = this,
+                    tallest = 0,
+                    row = 0,
+                    $container = $(this.element),
+                    container_width = $container.width();
+                $article = $(this.element).children();
+
+                if (single_column_mode === true) {
+                    article_width = $container.width() - self.options.padding_x;
+                } else {
+                    article_width = ($container.width() - self.options.padding_x * self.options.no_columns) / self.options.no_columns;
+                }
+
+                $article.each(function() {
+                    $(this).css('width', article_width);
+                });
+
+                columns = self.options.no_columns;
+
+                $article.each(function(index) {
+                    var current_column,
+                        left_out = 0,
+                        top = 0,
+                        $this = $(this),
+                        prevAll = $this.prevAll(),
+                        tallest = 0;
+
+                    if (single_column_mode === false) {
+                        current_column = (index % columns);
+                    } else {
+                        current_column = 0;
+                    }
+
+                    for (var t = 0; t < columns; t++) {
+                        $this.removeClass('c' + t);
+                    }
+
+                    if (index % columns === 0) {
+                        row++;
+                    }
+
+                    $this.addClass('c' + current_column);
+                    $this.addClass('r' + row);
+
+                    prevAll.each(function(index) {
+                        if ($(this).hasClass('c' + current_column)) {
+                            top += $(this).outerHeight() + self.options.padding_y;
+                        }
+                    });
+
+                    if (single_column_mode === true) {
+                        left_out = 0;
+                    } else {
+                        left_out = (index % columns) * (article_width + self.options.padding_x);
+                    }
+
+                    $this.css({
+                        'left': left_out,
+                        'top': top
+                    });
+                });
+
+                this.tallest($container);
+                $(window).resize();
+            };
+
+            Plugin.prototype.tallest = function(_container) {
+                var column_heights = [],
+                    largest = 0;
+
+                for (var z = 0; z < columns; z++) {
+                    var temp_height = 0;
+                    _container.find('.c' + z).each(function() {
+                        temp_height += $(this).outerHeight();
+                    });
+                    column_heights[z] = temp_height;
+                }
+
+                largest = Math.max.apply(Math, column_heights);
+                _container.css('height', largest + (this.options.padding_y + this.options.margin_bottom));
+            };
+
+            Plugin.prototype.make_layout_change = function(_self) {
+                if ($(window).width() < _self.options.single_column_breakpoint) {
+                    _self.calculate(true);
+                } else {
+                    _self.calculate(false);
+                }
+            };
+
+            $.fn[pluginName] = function(options) {
+                return this.each(function() {
+                    if (!$.data(this, 'plugin_' + pluginName)) {
+                        $.data(this, 'plugin_' + pluginName,
+                            new Plugin(this, options));
+                    }
+                });
+            }
+
+        })(jQuery, window, document);
+    </script>
+
+</body>
+
+</html>
