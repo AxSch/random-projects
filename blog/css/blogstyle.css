@@ -1789,7 +1789,7 @@ Dropdown Menus - might require updating
     font-size: 13px;
     text-shadow: none;
     list-style: none;
-    background: #eef0f0;
+    background: #0095b3;
     border: none;
     border-radius: 3px;
     box-shadow: 0 0 5px rgba(81, 100, 107, .2);
@@ -1877,7 +1877,7 @@ Tag buttons
 }
 
 .btn-tag:hover,
-.btn-tag.hover {
+.btn-tag:hover {
     border-color: transparent;
 }
 
@@ -1901,7 +1901,7 @@ Tag buttons
 }
 
 .btn-tag.btn-tag-rounded {
-    border-radius: 17px;
+    border-radius: 15px;
 }
 
 
@@ -3730,7 +3730,7 @@ post .comments {
     left: 0;
     position: absolute;
     font-family: 'Special Elite', cursive;
-    color: #000;
+    color: #f2f2f2;
     text-align: center;
     padding: 5px 5px 5px 5px;
 }
@@ -3739,4 +3739,63 @@ post .comments {
     position: relative;
     opacity: 0.75;
     background: rgba(0, 0, 0, 0.75);
+}
+
+
+/*--------------------------------------------------
+--------------------------------------
+-------------------------
+*/
+
+
+/*----userpage.html layout -----*/
+
+.profile-pic {
+    border-radius: 50%;
+}
+
+.site-heading h4 a {
+    color: white;
+}
+
+.site-heading h4 a:hover,
+.site-heading h4 a:focus {
+    color: #00bfe6;
+    -webkit-transition: color .1s linear 0s, background-color .1s linear 0s, opacity .2s linear 0s !important;
+    transition: color .1s linear 0s, background-color .1s linear 0s, opacity .2s linear 0s !important;
+}
+
+#badge {
+    padding-top: 30px;
+}
+
+#thoughtinput {
+    padding-top: 30px;
+    max-width: 600px;
+}
+
+#thoughtpost {
+    margin-top: 5px;
+    border-style: none;
+    background-color: #f2f2f2;
+}
+
+#thoughtbutton {
+    border-top-style: none;
+}
+
+#thoughtsend {
+    margin-top: -20px;
+}
+
+.noborder {
+    border-style: none;
+}
+
+.show {
+    display: block;
+}
+
+#navImg {
+    margin-top: -5px;
 }
