@@ -95,26 +95,32 @@
             <div class="col-xs-8 pull-right">
                 <div class="panel panel-blog">
                     <div class="panel-heading">
-                        <h4>Account</h4>
+                        <h4>Security and Privacy</h4>
 
-                        <p class="small">Here you can change your basic account settings</p>
-                        <hr>
+                        <p class="small">Here you can change your security and privacy settings</p>
                     </div>
                     <div class="panel-body">
                         <form action="">
-                            <div class="col-xs-6">
-                                <div class="form-group form-group-default">
-                                    <label>Username</label>
-                                    <input type="text" name="userName" class="form-control">
+                            <div class="col-xs-12">
+                                <div class="panel-heading">
+                                    <h5>Security</h5>
                                 </div>
                             </div>
                             <div class="col-xs-6">
-                                <div class="form-group form-group-default">
-                                    <label>Email</label>
-                                    <input type="email" name="userMail" class="form-control">
 
+                                <div class="form-group form-group-default">
+                                    <h6>Login Verification</h6>
+                                    <label for="loginVeri">Verify my login requests</label>
+                                    <input type="checkbox" name="loginVeri">
                                 </div>
-                                <p class="small">Email will not be displayed to the public</p>
+                                <p class="small">Once logged in, SoM will send you a SMS message with a pin that you&rsquo;ll need to access your account</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="form-group form-group-default">
+                                    <h6>Password Reset</h6>
+                                    <label for="passwrdReset">Require PIN and personal information to reset my password</label>
+                                    <input type="checkbox" name="passwrdReset">
+                                </div>
                             </div>
                             <div class="col-xs-6">
                                 <div class="form-group form-group-default">
@@ -134,34 +140,80 @@
                                     </select>
                                 </div>
                             </div>
-                            <br>
-                            <br>
-                            <div class="panel-heading">
-
-                                <h5>Content</h5>
-
-                            </div>
-                            <div class="panel-body">
-                                <div class="col-xs-6">
-                                    <div class="form-group form-group-default">
-                                        <label>Country</label>
-                                        <select class="form-control">
-                                            <option>United Kingdom</option>
-                                            <option>France</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6">
-                                    <div class="form-group form-group-default">
-                                        <label>Trigger content</label>
-                                        <input type="checkbox"> Warn me before showing media that could be harmful.
-
-                                    </div>
+                            <hr>
+                            <div class="col-xs-12">
+                                <div class="panel-heading">
+                                    <h5>Privacy</h5>
                                 </div>
                             </div>
+                            <div class="col-xs-6">
+                                <div class="panel-body">
+                                    <div class="form-group form-group-default">
+                                        <h6>Thought Privacy</h6>
+                                        <label for="thoughtPriv">Protect my Thoughts</label>
+                                        <input type="checkbox" name="thoughtPriv">
+                                    </div>
+                                    <p class="small">If checked, only those who you approve will be able to see your thoughts. Future thoughts won't be available to the public.</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="panel-body">
+                                    <div class="form-group form-group-default">
+                                        <h6>Thought Location</h6>
+                                        <label for="thoughtLoc">Add my location to my Thoughts</label>
+                                        <input type="checkbox" name="thoughtLoc">
+                                    </div>
+                                    <p class="small">Can be switched on or off before posting a thought. SoM will store this location when checked.</p>
+                                    <button class="btn btn-primary">Delete location data</button>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="panel-body">
+                                    <div class="form-group form-group-default">
+                                        <h6>Messaging</h6>
+                                        <label for="messagingSet"> Recieve messages from anyone</label>
+                                        <input type="checkbox" name="messagingSet">
+                                        <label for="messageReceipts"> Send/Recieve receipts</label>
+                                        <input type="checkbox" name="messageReceipts">
+                                    </div>
+                                    <p class="small">If selected, anyone using SoM can send you a message</p>
 
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-xs-12">
+                                <div class="panel-heading">
+                                    <h5>Password</h5>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="panel-body">
+                                    <div class="form-group form-group-default">
+                                        <h6>Forgot your password?</h6>
+                                        <a class="form-control" href="#">Click Here!</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="panel-body">
+                                    <div class="form-group form-group-default">
+                                        <h6>Password Reset</h6>
+                                        <label for="currentPass">Current Password</label>
+                                        <span class="form-control">
+                                                <input type="text" name="currentPass">
+                                            </span>
+                                        <label for="newPass">New Password</label>
+                                        <span class="form-control">
+                                                <input type="text" name="newPass">
+                                            </span>
 
-
+                                        <label for="passConfirm">Confirm Password</label>
+                                        <span class="form-control">
+                                                <input type="text" name="passConfirm">
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="panel-footer text-center">
                                 <div class="col-xs-12">
                                     <button class="btn btn-primary">Save Changes</button>
@@ -169,10 +221,8 @@
                             </div>
 
                         </form>
-
                     </div>
                 </div>
-
             </div>
 
             <div class="col-xs-4">
@@ -199,13 +249,14 @@
 
 
                 <div class="list-group">
-                    <a href="account_settings.html" class="list-group-item noborder active">Account</a>
-                    <a href="account_security.html" class="list-group-item noborder">Security and Privacy</a>
+                    <a href="account_settings.html" class="list-group-item noborder">Account</a>
+                    <a href="account_security.html" class="list-group-item noborder active">Security and Privacy</a>
                     <a href="#" class="list-group-item noborder">Notifications</a>
                     <a href="#" class="list-group-item noborder disabled">Mobile</a>
                     <a href="#" class="list-group-item noborder">Accessibility</a>
 
                 </div>
+
             </div>
         </div>
     </div>
