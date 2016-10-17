@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Forum</title>
+    <!---Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!---Main Style -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="css/blogstyle.css" rel="stylesheet">
+    <!--Fonts-->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <!--  removed role="navigation" by http://www.crispedge.com -->
+    <nav id="header" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!--Toggle navigation for mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        Menu
+                        <i class="fa fa-bars"></i>
+                    </button>
+                <a class="navbar-brand" href="index.html">Project Ragnarok</a>
+            </div>
+            <!-- The nav links - forms and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="login_page.html">Login</a>
+                    </li>
+                    <li>
+                        <a href="textarchive.html">MindSpace</a>
+                    </li>
+                    <li>
+                        <a href="thoughttalk.html">ThoughtTalk</a>
+                    </li>
+                    <li>
+                        <a href="about_us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="contact_us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- navbar-collapse -->
+        </div>
+        <!-- div -container -->
+    </nav>
+    <!--Blog Header with background image-->
+    <header class="intro-header" style="background-image: url('images/smiley-1171304_1920.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Project Ragnarok: The Archive</h1>
+                        <hr class="small">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end of Header-->
+    <!--- Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="userpage.html">Username</a>
+                    </li>
+                    <li class="active">
+                        Account Settings
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h4 class="text-center text-uppercase">Settings</h4>
+            <hr>
+            <div class="col-xs-8 pull-right">
+                <div class="panel panel-blog">
+                    <div class="panel-heading">
+                        <h4>Account</h4>
+                        <p class="small">Here you can change your basic account settings</p>
+                        <hr>
+                    </div>
+                    <div class="panel-body">
+                        <form action="">
+                            <div class="col-xs-6">
+                                <div class="form-group form-group-default">
+                                    <label>Username</label>
+                                    <input type="text" name="userName" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="form-group form-group-default">
+                                    <label>Email</label>
+                                    <input type="email" name="userMail" class="form-control">
+                                </div>
+                                <p class="small">Email will not be displayed to the public</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="form-group form-group-default">
+                                    <label>Timezone</label>
+                                    <select class="form-control">
+                                            <option>London</option>
+                                            <option>Paris</option>
+                                        </select>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="form-group form-group-default">
+                                    <label>Language</label>
+                                    <select class="form-control">
+                                            <option>English</option>
+                                            <option>French</option>
+                                        </select>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="panel-heading">
+                                <h5>Content</h5>
+                            </div>
+                            <div class="panel-body">
+                                <div class="col-xs-6">
+                                    <div class="form-group form-group-default">
+                                        <label>Country</label>
+                                        <select class="form-control">
+                                                <option>United Kingdom</option>
+                                                <option>France</option>
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group form-group-default">
+                                        <label>Trigger content</label>
+                                        <input type="checkbox"> Warn me before showing media that could be harmful.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer text-center">
+                                <div class="col-xs-12">
+                                    <button class="btn btn-primary">Save Changes</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="panel panel-blog">
+                    <div class="panel-heading">
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                            <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <blockquote>I am Who I Am
+                            <br>
+                            <cite class="small">&nbsp;by Username/Someone</cite>
+                        </blockquote>
+                        <img width="120" height="120" src="http://3.bp.blogspot.com/-19GVoMdwoFo/Vj1Ccmi6MCI/AAAAAAAADL0/5Cz-PeAdGIQ/s640/Anonymous-facbook-profile-picture.jpg" alt="profile pic" class="profile-pic center-block">
+                        <div class="center-block">
+                            <div class="panel-heading">
+                                <h4 class="text-center">Username</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-4">
+                <div>
+                    <div class="list-group">
+                        <a href="account_settings.html" class="list-group-item noborder active">Account</a>
+                        <a href="account_security.html" class="list-group-item noborder">Security and Privacy</a>
+                        <a href="#" class="list-group-item noborder">Notifications</a>
+                        <a href="#" class="list-group-item noborder disabled">Mobile</a>
+                        <a href="#" class="list-group-item noborder">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--end row -->
+
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <ul class="list-inline text-center">
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
+                </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; Project Ragnarok: State Of Mind 2016</p>
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer -->
+    <!--</div>-->
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/headeroom.js"></script>
+    <script>
+        jQuery(document).ready(function() {
+            (function() {
+                var header = document.querySelector("#header");
+
+                if (window.location.hash) {
+                    header.classList.add("headroom--unpinned");
+                }
+
+                var headroom = new Headroom(header, {
+                    tolerance: {
+                        down: 10,
+                        up: 20
+                    },
+                    offset: 205
+                });
+                headroom.init();
+
+            }());
+        });
+    </script>
+</body>
+
+</html>

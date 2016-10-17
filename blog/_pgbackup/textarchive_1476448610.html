@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Test Forum</title>
+        <!---Bootstrap-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!---Main Style -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="css/blogstyle.css" rel="stylesheet">
+        <!--Fonts-->
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!-- Navigation -->
+        <!--  removed role="navigation" by http://www.crispedge.com -->
+        <nav id="header" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!--Toggle navigation for mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        Menu
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Project Ragnarok</a>
+                </div>
+                <!-- The nav links - forms and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="login_page.html">Login</a>
+                        </li>
+                        <li>
+                            <a href="textarchive.html">MindSpace</a>
+                        </li>
+                        <li>
+                            <a href="thoughttalk.html">ThoughtTalk</a>
+                        </li>
+                        <li>
+                            <a href="about_us.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="contact_us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- navbar-collapse -->
+            </div>
+            <!-- div -container -->
+        </nav>
+        <!--Blog Header with background image-->
+        <header class="intro-header" style="background-image: url('images/smiley-1171304_1920.jpg')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="site-heading">
+                            <h1>Project Ragnarok: The Archive</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end of Header-->
+        <div class="headernav">
+            <div class="container-fluid">
+                <div class="row">
+                    <!--  removed col-md-2 as col-sm-2 is there and col-lg-1 by http://www.crispedge.com bootlint -->
+                    <div class="col-xs-6 logo visible-md col-md-offset-1 col-md-1 visible-lg col-lg-offset-1">
+                        <a href="userpage.html">
+                            <img src="http://lorempixel.com/40/40" class="img-responsive" alt="dumm image">
+                        </a>
+                    </div>
+                    <!--  removed col-lg-3 as col-md-3 is there by http://www.crispedge.com bootlint -->
+                    <div class="selecttopic col-xs-offset-2 col-xs-8 col-sm-3 col-sm-offset-1 col-md-offset-0">
+                        <div class="dropdown">
+                            <a data-toggle="dropdown" href="#">Categories 2</a>
+                            <b class="caret"></b>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="#">Categories 1</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-2" href="#">Categories 2</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-3" href="#">Categories 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 search col-xs-8 col-xs-offset-2 col-sm-offset-0 col-md-4">
+                        <div class="wrap">
+                            <!-- Removed the complete form which you were
+		  using as its not needed any more so i have
+		  use bootstrap's input-group by http://www.crispedge.com -->
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for...">
+                                <span class="input-group-btn"><button class="btn btn-default" type="button">Go!</button></span>
+                            </div>
+                            <!-- /input-group -->
+                        </div>
+                    </div>
+                    <!--  removed col-lg-4 as col-md-4 is there by http://www.crispedge.com bootlint -->
+                    <div class="avt text-center col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-4 col-md-3">
+                        <form action="#" method="POST" class="form">
+                            <!--  added type attribute in button element http://www.crispedge.com bootlint -->
+                            <button type="button" class="btn btn-lg btn-primary ">Create New Post</button>
+                        </form>
+                        <!--<div class="env pull-left">
+                            <i class="fa fa-fa-envelope"></i>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  Breadcrumbs added by http://www.crispedge.com -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Library</a>
+                        </li>
+                        <li class="active">Data</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12  col-md-8 col-md-offset-1">
+                    <div class="content-blog content">
+                        <div class="row">
+                            <div class="col-xs-2 col-sm-1">
+                                <ul class="list-unstyled blog-flags">
+                                    <li>
+                                        <a href="user_page.html">
+                                            <img src="http://lorempixel.com/40/40" class="img-responsive" alt="avtar"> 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-container="body" data-toggle="popover" data-placement="top" title="Popover title" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><span class="green"><i class="fa fa-certificate" aria-hidden="true"></i><span class="badge">l</span></span></a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#" data-toggle="tooltip" data-placement="right" title="Tooltip on right"><span class="light-blue"><i class="fa fa-space-shuttle" aria-hidden="true"></i></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-10 col-sm-11">
+                                <div class="panel panel-blog">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"><a href="#">Nam condimentum pharetra lacus vitae venenatis</a></h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        Nulla ipsum ipsum, auctor at tincidunt finibus, faucibus vel enim. Sed magna eros, viverra at pharetra eu, rhoncus sit amet quam. Mauris quis purus id est semper pellentesque. Vivamus quis venenatis dui. Aliquam et ligula odio. Praesent quis commodo neque,
+                                        a interdum ex. Duis blandit dapibus sapien, vel blandit lorem iaculis sit amet.
+                                        <p> Phasellus non ornare velit, eu efficitur mauris. Nunc lacinia nisl et sapien consequat, ullamcorper rhoncus lorem fermentum. Morbi pellentesque, sem vitae convallis pellentesque, sapien mi pellentesque velit, sed auctor
+                                        sem orci in mauris. Aliquam sit amet nibh tortor. Pellentesque ullamcorper enim ut tincidunt ultricies. Praesent est urna, commodo cursus porta in, posuere ut lorem. </p>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <ul class="list-inline">
+                                            <li>
+                                                <a href="#"><span class="green"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span class="red"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> 4</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span class="light-grey"><i class="fa fa-reply" aria-hidden="true"></i></span></a>
+                                            </li>
+                                            <li>
+                                                <span class="light-grey"><i class="fa fa-clock-o" aria-hidden="true"></i> Posted on: 20 Nov @ 9:30 AM</span>
+                                            </li>
+                                            <li class="pull-right">
+                                                <span class="light-grey"><i class="fa fa-flag" aria-hidden="true"></i></span>
+                                            </li>
+                                            <li class="pull-right">
+                                                <span class="light-grey"><i class="fa fa-reply fa-flip-horizontal" aria-hidden="true"></i></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-offset-0 col-sm-12 col-md-3">
+                    <div class="sidebar-content sidebar">
+                        <h5>Categories</h5>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item"><span class="badge">1</span> Cras justo odio</a>
+                            <a href="#" class="list-group-item"><span class="badge">8</span>Dapibus ac facilisis in</a>
+                            <a href="#" class="list-group-item"><span class="badge">5</span>Morbi leo risus</a>
+                            <a href="#" class="list-group-item"><span class="badge">6</span>Porta ac consectetur ac</a>
+                            <a href="#" class="list-group-item"><span class="badge">71</span>Vestibulum at eros</a>
+                        </div>
+                    </div>
+                    <div class="sidebar-content sidebar">
+                        <h5>Archives</h5>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item"><span class="badge">1</span> Cras justo odio</a>
+                            <a href="#" class="list-group-item"><span class="badge">8</span>Dapibus ac facilisis in</a>
+                            <a href="#" class="list-group-item"><span class="badge">5</span>Morbi leo risus</a>
+                            <a href="#" class="list-group-item"><span class="badge">6</span>Porta ac consectetur ac</a>
+                            <a href="#" class="list-group-item"><span class="badge">71</span>Vestibulum at eros</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 text-center">
+                    <ul class="paginationforum">
+                        <li class="hidden-xs">
+                            <a href="#" class="prevnext"><i class="fa fa-angle-left"></i></a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="#">1</a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="#">2</a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="#">3</a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="#">4</a>
+                        </li>
+                        <li>
+                            <a href="#">5</a>
+                        </li>
+                        <li>
+                            <a href="#">6</a>
+                        </li>
+                        <li>
+                            <a href="#" class="active">7</a>
+                        </li>
+                        <li>
+                            <a href="#">8</a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="#">9</a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="#">10</a>
+                        </li>
+                        <li class="hidden-xs hidden-md">
+                            <a href="#">11</a>
+                        </li>
+                        <li class="hidden-xs hidden-md">
+                            <a href="#">12</a>
+                        </li>
+                        <li class="hidden-xs hidden-sm hidden-md">
+                            <a href="#">13</a>
+                        </li>
+                        <li>
+                            <a href="#">1000</a>
+                        </li>
+                        <li>
+                            <a href="#" class="prevnext last"><i class="fa fa-angle-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <ul class="list-inline text-center">
+                            <li>
+                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
+                            </li>
+                        </ul>
+                        <p class="copyright text-muted">Copyright &copy; Project Ragnarok: State Of Mind 2016</p>
+                    </div>
+                    <!--end footer -->
+                </div>
+                <!--end row -->
+            </div>
+            <!--end container-->
+        </footer>
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/headeroom.js"></script>
+        <script>
+        $(function() {
+            $('[data-toggle="popover"]').popover()
+        });
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+    </script>
+        <script>
+        jQuery(document).ready(function() {
+            (function() {
+                var header = document.querySelector("#header");
+
+                if (window.location.hash) {
+                    header.classList.add("headroom--unpinned");
+                }
+
+                var headroom = new Headroom(header, {
+                    tolerance: {
+                        down: 10,
+                        up: 20
+                    },
+                    offset: 205
+                });
+                headroom.init();
+
+            }());
+        });
+    </script>
+    </body>
+</html>

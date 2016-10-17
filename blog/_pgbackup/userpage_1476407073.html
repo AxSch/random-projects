@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Test Forum</title>
+        <!---Bootstrap-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!---Main Style -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+        <link href="css/blogstyle.css" rel="stylesheet">
+        <!--Fonts-->
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <script src="https://cdn.tinymce.com/4/tinymce.min.js"></script>
+        <script type="text/javascript">
+        tinymce.init({
+            selector: '#thoughtpost',
+            plugins: 'autolink autoresize autosave link'
+
+        });
+    </script>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <!--  removed role="navigation" by http://www.crispedge.com -->
+        <nav id="header" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!--Toggle navigation for mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        Menu
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Project Ragnarok</a>
+                </div>
+                <!-- The nav links - forms and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li id="navImg" class="dropdown">
+                            <a href="userpage.html" class="dropdown-toggle" data-toggle="dropdown">
+                                <img width="32" height="32" src="http://3.bp.blogspot.com/-19GVoMdwoFo/Vj1Ccmi6MCI/AAAAAAAADL0/5Cz-PeAdGIQ/s640/Anonymous-facbook-profile-picture.jpg" alt="Profile pic" class="profile-pic">
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Profile Settings</a>
+                                </li>
+                                <li>
+                                    <a href="account_settings.html">Account Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="textarchive.html">MindSpace</a>
+                        </li>
+                        <li>
+                            <a href="thoughttalk.html">ThoughtTalk</a>
+                        </li>
+                        <li>
+                            <a href="about_us.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="contact_us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- navbar-collapse -->
+            </div>
+            <!-- div -container -->
+        </nav>
+        <!--Blog Header with background image-->
+        <header class="intro-header" style="background-image: url('images/smiley-1171304_1920.jpg')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="site-heading">
+                            <img width="128" height="128" src="http://3.bp.blogspot.com/-19GVoMdwoFo/Vj1Ccmi6MCI/AAAAAAAADL0/5Cz-PeAdGIQ/s640/Anonymous-facbook-profile-picture.jpg" alt="profile pic" class="profile-pic">
+                            <h4 class="text-center">UserName<div class="btn-group">
+                                    <a class="btn-tag-rounded dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-chevron-circle-down fa-align-center"></i></a>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li>
+                                            <a href="#">Profile Settings</a>
+                                        </li>
+                                        <li>
+                                            <a href="account_settings.html">Account Settings</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Logout</a>
+                                        </li>
+                                    </ul>
+                                </div></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end of Header-->
+        <!---Page Content -->
+        <div class="container">
+            <div class="row">
+                <div id="thoughtinput" class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+                    <div class="panel panel-blog">
+                        <div class="panel-body text-center">
+                            <textarea name="" id="thoughtpost" cols="85" placeholder="What&rsquo;s on you&rsquo;re Mind?" class="input-sm"></textarea>
+                        </div>
+                        <div class="panel-footer text-center" id="thoughtbutton">
+                            <button type="submit" class="btn btn-primary" id="thoughtsend">POST</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12" id="badge">
+                    <div class="panel panel-blog">
+                        <div class="panel-heading">
+                            <h3><i class="fa fa-star-o"></i> Badges</h3>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="list-inline">
+                                <li>
+                                    <img src="" alt="badge 1">
+                                </li>
+                                <li>
+                                    <img src="" alt="badge 1">
+                                </li>
+                                <li>
+                                    <img src="" alt="badge 1">
+                                </li>
+                                <li>
+                                    <img src="" alt="badge 1">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-0">
+                    <div class="panel panel-blog">
+                        <div class="panel-heading">
+                            <a href="#"><h4 class="text-center"><i class="fa fa-sticky-note"></i> My Posts</h4></a>
+                        </div>
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item noborder">Post 1</a>
+                                <a href="#" class="list-group-item noborder">Post 2</a>
+                                <a href="#" class="list-group-item noborder">Post 3</a>
+                                <a href="#" class="list-group-item noborder">Post 4</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-4 col-md-offset-0">
+                    <div class="panel panel-blog">
+                        <div class="panel-heading">
+                            <a href="#"><h4 class="text-center"><i class="fa fa-users"></i> My Friends</h4></a>
+                        </div>
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item noborder">
+                                    <img width="24" height="24" src="http://placehold.it/350x150" alt="" class="profile-pic"> UserName
+                                </a>
+                                <a href="#" class="list-group-item noborder">
+                                    <img width="24" height="24" src="http://placehold.it/350x150" alt="" class="profile-pic"> UserName
+                                </a>
+                                <a href="#" class="list-group-item noborder">
+                                    <img width="24" height="24" src="http://placehold.it/350x150" alt="" class="profile-pic"> UserName
+                                </a>
+                                <a href="#" class="list-group-item noborder">
+                                    <img width="24" height="24" src="http://placehold.it/350x150" alt="" class="profile-pic"> UserName
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-4 col-md-offset-0">
+                    <div class="panel panel-blog">
+                        <div class="panel-heading">
+                            <a href="#"><h4 class="text-center"><i class="fa fa-bell-o"></i>Updates</h4></a>
+                        </div>
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item noborder">Post 1</a>
+                                <a href="#" class="list-group-item noborder">Post 2</a>
+                                <a href="#" class="list-group-item noborder">Post 3</a>
+                                <a href="#" class="list-group-item noborder">Post 4</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h4><i class="fa fa-cloud"></i> Recent Thoughts</h4>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-3 col-md-offset-0">
+                    <h6>Test</h6>
+                    <div class="panel panel-blog">
+                        <a href="#">
+                            <div class="panel-body">
+                                <div class="thumbnail">
+                                    <img width="240" height="240" src="http://www.reactiongifs.com/r/wfa.gif" alt="Thought /w text">
+                                </div>
+                                <p class="text-center">When you&rsquo;ve had a good week</p>
+                            </div>
+                        </a>
+                        <div class="panel-footer">
+                            <span class="bgoverlay"><i class="fa fa-heart-o"> 21 </i><a href="#"><i class="fa fa-reply pull-right"> 5</i></a><a href="#"><i class="fa fa-retweet fa-pull-right"> 2</i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-0 col-md-3">
+                    <h6>Test</h6>
+                    <div class="panel panel-blog">
+                        <a href="#">
+                            <div class="panel-body">
+                                <div class="thumbnail">
+                                    <img width="240" height="240" src="https://media0.giphy.com/media/sjEasfL8rvQ9a/200_s.gif" alt="Thought w/o text">
+                                </div>
+                                <p class="text-center">me right now</p>
+                            </div>
+                        </a>
+                        <div class="panel-footer">
+                            <span class="bgoverlay"><i class="fa fa-heart-o"> 21 </i><a href="#"><i class="fa fa-reply pull-right"> 5</i></a><a href="#"><i class="fa fa-retweet fa-pull-right"> 2</i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-3 col-md-offset-0">
+                    <h6>Test</h6>
+                    <div class="panel panel-blog">
+                        <a href="#">
+                            <div class="panel-body">
+                                <div class="thumbnail">
+                                    <img width="240" height="240" src="http://i.amz.mshcdn.com/ynO4RHoBRpPS9H7NPLeI520-Jb8=/fit-in/1200x9600/http%3A%2F%2Fmashable.com%2Fwp-content%2Fuploads%2F2013%2F07%2FDr.-Who.gif" alt="Thought gif">
+                                    <p class="text-overlay">Me when the fridge is empty</p>
+                                </div>
+                                <p class="text-center">Feeling low</p>
+                            </div>
+                        </a>
+                        <div class="panel-footer">
+                            <span class="bgoverlay"><i class="fa fa-heart-o"> 21 </i><a href="#"><i class="fa fa-reply pull-right"> 5</i></a><a href="#"><i class="fa fa-retweet fa-pull-right"> 2</i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-3 col-md-offset-0">
+                    <h6>Test</h6>
+                    <div class="panel panel-blog">
+                        <a href="#">
+                            <div class="panel-body">
+                                <div class="thumbnail">
+                                    <img width="240" height="240" src="http://static.srcdn.com/wp-content/uploads/Joker-Face-Skinned.jpg" alt="Thought pic">
+                                </div>
+                                <p class="text-center">Feeling pretty gone today</p>
+                            </div>
+                        </a>
+                        <div class="panel-footer">
+                            <span class="bgoverlay"><i class="fa fa-heart-o"> 21 </i><a href="#"><i class="fa fa-reply pull-right"> 5</i></a><a href="#"><i class="fa fa-retweet fa-pull-right"> 2</i></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Page selection -->
+            <ul class="pager">
+                <li class="next">
+                    <a href="#">&rarr; More</a>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <ul class="list-inline text-center">
+                            <li>
+                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
+                            </li>
+                        </ul>
+                        <p class="copyright text-muted">Copyright &copy; Project Ragnarok: State Of Mind 2016</p>
+                    </div>
+                    <!--end footer -->
+                </div>
+                <!--end row -->
+            </div>
+            <!--end container-->
+        </footer>
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/headeroom.js"></script>
+    </body>
+</html>

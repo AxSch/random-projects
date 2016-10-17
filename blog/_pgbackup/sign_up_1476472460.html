@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Forum</title>
+    <!---Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!---Main Style -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="css/blogstyle.css" rel="stylesheet">
+    <!--Fonts-->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <!--  removed role="navigation" by http://www.crispedge.com -->
+    <nav id="header" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!--Toggle navigation for mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        Menu
+                        <i class="fa fa-bars"></i>
+                    </button>
+                <a class="navbar-brand" href="index.html">Project Ragnarok</a>
+            </div>
+            <!-- The nav links - forms and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="login_page.html">Login</a>
+                    </li>
+                    <li>
+                        <a href="textarchive.html">MindSpace</a>
+                    </li>
+                    <li>
+                        <a href="#">ThoughtTalk</a>
+                    </li>
+                    <li>
+                        <a href="about_us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="contact_us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- navbar-collapse -->
+        </div>
+        <!-- div -container -->
+    </nav>
+    <!--Blog Header with background image-->
+    <header class="intro-header" style="background-image: url('images/smiley-1171304_1920.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Project Ragnarok: The Archive</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end of Header-->
+    <!--<form action="#" method="POST">
+
+        <fieldset>
+            <legend>
+                <span class="number">1</span> Your Basic Info
+            </legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="user_password">
+
+            <label>Age:</label>
+            <label for="under_18">Under 18</label><input type="radio" id="under_18" name="user_age">
+            <label for="over_18">Over 18</label><input type="radio" id="over_18" name="user_age">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <span class="number">2</span> Your Profile
+            </legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+
+            <label for="bio">Biography:</label>
+            <textarea id="bio" name="user_bio"></textarea>
+
+
+            <label>The boring stuff:</label>
+            <a href="">Terms and conditions</a>
+            <label class="light" for="terms_accept">Accept</label>
+            <input type="checkbox" id="agree" value="terms_conditions">
+
+        </fieldset>
+        <button id="submit" type="submit">Sign Up</button>
+
+    </form>-->
+    <!--<body class="fixed-header">-->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-offset-0 col-sm-4 col-sm-offset-1">
+                <div class="panel panel-blog">
+                    <div class="panel-body">
+                        <h3>Sign Up to Project: Ragnarok</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Start of Form Control 1-->
+        <form id="form-register" action="">
+            <div class="row">
+                <div class="col-xs-5 col-xs-offset-1 col-sm-offset-0 col-sm-6">
+                    <div class="form-group form-group-default">
+                        <label>First Name</label>
+                        <input type="text" name="firstName" placeholder="Mac" class="form-control" required>
+                    </div>
+                </div>
+                <!-- End of Form Control 1-->
+                <!-- Start of Form Control 2 -->
+                <div class="col-xs-5 col-xs-offset-1 col-sm-offset-0 col-sm-6">
+                    <div class="form-group form-group-default">
+                        <label>Last Name</label>
+                        <input type="text" name="lastName" placeholder="Don" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- End of Form Control 2  & Row -->
+            <!-- Start of Form Control 3 -->
+            <div class="row">
+                <div class="col-xs-5 col-sm-offset-2 col-sm-4">
+                    <div class="form-group form-group-default">
+                        <label>Username</label>
+                        <input type="text" name="userName" placeholder="MacDons" class="form-control" required>
+                    </div>
+                </div>
+                <!-- End of Form Control 3 -->
+                <!--Start of Form Control 4 -->
+                <div class="col-xs-5 col-sm-4 col-sm-offset-0">
+                    <div class="form-group form-group-default">
+                        <label>Email</label>
+                        <input type="email" name="userMail" placeholder="Mac@dons.com" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Form Control 4 -->
+            <!--Start of Form Control 5 -->
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                    <div class="form-group form-group-default">
+                        <label>Password</label>
+                        <input type="password" name="userPword" placeholder="******" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Form Control 4 -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="checkbox">
+                        <input type="checkbox" value="0" id="checkbox1">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <p>I agree to the<a href="#" class="text-info small">Terms and Conditions</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <a href="#" class="text-info small">Help? Contact Support</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 text-center col-sm-offset-3">
+                    <button class="btn btn-cons" type="submit">Create Account</button>
+                </div>
+            </div>
+        </form>
+        <!--End of Register Form-->
+        <div class="pull-bottom sm-pull-bottom">
+            <div class="col-sm-12 text-center">
+                <p><small>Alternatively login using a <a href="#" class="text-info">Facebook</a> or <a href="#" class="text-info">Google</a> account.</small></p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Project Ragnarok: State Of Mind 2016</p>
+                </div>
+                <!--end footer -->
+            </div>
+            <!--end row -->
+        </div>
+        <!--end container-->
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/headeroom.js"></script>
+    <script>
+        jQuery(document).ready(function() {
+            (function() {
+                var header = document.querySelector("#header");
+
+                if (window.location.hash) {
+                    header.classList.add("headroom--unpinned");
+                }
+
+                var headroom = new Headroom(header, {
+                    tolerance: {
+                        down: 10,
+                        up: 20
+                    },
+                    offset: 205
+                });
+                headroom.init();
+
+            }());
+        });
+    </script>
+</body>
+
+</html>

@@ -1,78 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Test Forum</title>
-    <!---Bootstrap-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!---Main Style -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="css/blogstyle.css" rel="stylesheet">
-    <!--Fonts-->
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-    <!-- Navigation -->
-    <!--  removed role="navigation" by http://www.crispedge.com -->
-    <nav id="header" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!--Toggle navigation for mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar">
-          <span class="sr-only">Toggle navigation</span>
-          Menu<i class="fa fa-bars"></i>
-        </button>
-                <a class="navbar-brand" href="index.html">Project Ragnarok</a>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Test Forum</title>
+        <!---Bootstrap-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!---Main Style -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="css/blogstyle.css" rel="stylesheet">
+        <!--Fonts-->
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!-- Navigation -->
+        <!--  removed role="navigation" by http://www.crispedge.com -->
+        <nav id="header" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!--Toggle navigation for mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        Menu
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Project Ragnarok</a>
+                </div>
+                <!-- The nav links - forms and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="login_page.html">Login</a>
+                        </li>
+                        <li>
+                            <a href="textarchive.html">MindSpace</a>
+                        </li>
+                        <li>
+                            <a href="#">ThoughtTalk</a>
+                        </li>
+                        <li>
+                            <a href="about_us.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="contact_us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- navbar-collapse -->
             </div>
-            <!-- The nav links - forms and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-navbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="login_page.html">Login</a>
-                    </li>
-
-                    <li>
-                        <a href="textarchive.html">MindSpace</a>
-                    </li>
-
-                    <li>
-                        <a href="#">ThoughtTalk</a>
-                    </li>
-
-                    <li>
-                        <a href="about_us.html">About Us</a>
-                    </li>
-
-                    <li>
-                        <a href="contact_us.html">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- navbar-collapse -->
-        </div>
-        <!-- div -container -->
-    </nav>
-
-    <!--Blog Header with background image-->
-    <header class="intro-header" style="background-image: url('images/smiley-1171304_1920.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>Project Ragnarok: The Archive</h1>
-                        <hr class="small">
+            <!-- div -container -->
+        </nav>
+        <!--Blog Header with background image-->
+        <header class="intro-header" style="background-image: url('images/smiley-1171304_1920.jpg')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="site-heading">
+                            <h1>Project Ragnarok: The Archive</h1>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- end of Header-->
-
-    <!--<form action="#" method="POST">
+        </header>
+        <!-- end of Header-->
+        <!--<form action="#" method="POST">
 
         <fieldset>
             <legend>
@@ -113,94 +105,93 @@
         <button id="submit" type="submit">Sign Up</button>
 
     </form>-->
-
-    <!--<body class="fixed-header">-->
-    <div class="register-container sm-p-30">
-        <div class="container-sm-height">
-            <div class="row row-sm-height">
-                <div class="col-sm-12 col-sm-height col-middle">
-                    <h3>Sign Up to Project: Ragnarok</h3>
-                    <!--Start of Form Control 1-->
-                    <form id="form-register" class="p-t-15" role="form" action="">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group form-group-default">
-                                    <label>First Name</label>
-                                    <input type="text" name="firstName" placeholder="Mac" class="form-control" required>
-                                </div>
-                            </div>
-                            <!-- End of Form Control 1-->
-                            <!-- Start of Form Control 2 -->
-                            <div class="col-sm-6">
-                                <div class="form-group form-group-default">
-                                    <label>Last Name</label>
-                                    <input type="text" name="lastName" placeholder="Don" class="form-control" required>
-                                </div>
-                            </div>
+        <!--<body class="fixed-header">-->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                    <div class="panel panel-blog">
+                        <div class="panel-body">
+                            <h3>Sign Up to Project: Ragnarok</h3>
                         </div>
-                        <!-- End of Form Control 2  & Row -->
-                        <!-- Start of Form Control 3 -->
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group form-group-default">
-                                    <label>Username</label>
-                                    <input type="text" name="userName" placeholder="MacDons" class="form-control" required>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </div>
+            <!--Start of Form Control 1-->
+            <form id="form-register" action="">
+                <div class="row">
+                    <div class="col-xs-5 col-xs-offset-1 col-sm-4 col-sm-offset-2">
+                        <div class="form-group form-group-default">
+                            <label>First Name</label>
+                            <input type="text" name="firstName" placeholder="Mac" class="form-control" required>
                         </div>
-                        <!-- End of Form Control 3 -->
-                        <!--Start of Form Control 4 -->
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group form-group-default">
-                                    <label>Email</label>
-                                    <input type="email" name="userMail" placeholder="Mac@dons.com" class="form-control" required>
-                                </div>
-                            </div>
+                    </div>
+                    <!-- End of Form Control 1-->
+                    <!-- Start of Form Control 2 -->
+                    <div class="col-xs-5 col-xs-offset-1 col-sm-offset-0 col-sm-4">
+                        <div class="form-group form-group-default">
+                            <label>Last Name</label>
+                            <input type="text" name="lastName" placeholder="Don" class="form-control" required>
                         </div>
-                        <!-- End of Form Control 4 -->
-                        <!--Start of Form Control 5 -->
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group form-group-default">
-                                    <label>Password</label>
-                                    <input type="password" name="userPword" placeholder="******" class="form-control" required>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <!-- End of Form Control 2  & Row -->
+                <!-- Start of Form Control 3 -->
+                <div class="row">
+                    <div class="col-xs-5 col-sm-offset-2 col-sm-4">
+                        <div class="form-group form-group-default">
+                            <label>Username</label>
+                            <input type="text" name="userName" placeholder="MacDons" class="form-control" required>
                         </div>
-                        <!-- End of Form Control 4 -->
-                        <div class="row m-t-10">
-                            <div class="col-md-6">
-                                <div class="checkbox-inline checkbox-lg">
-                                    <input type="checkbox" value="0" id="checkbox1">
-                                </div>
+                    </div>
+                    <!-- End of Form Control 3 -->
+                    <!--Start of Form Control 4 -->
+                    <div class="col-xs-5 col-sm-4 col-sm-offset-0">
+                        <div class="form-group form-group-default">
+                            <label>Email</label>
+                            <input type="email" name="userMail" placeholder="Mac@dons.com" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Form Control 4 -->
+                <!--Start of Form Control 5 -->
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                        <div class="form-group form-group-default">
+                            <label>Password</label>
+                            <input type="password" name="userPword" placeholder="******" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Form Control 4 -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="checkbox">
+                            <input type="checkbox" value="0" id="checkbox1">
+                        </div>
+                        <div class="row">
+                            <div class="text-center col-md-8 col-md-offset-8">
                                 <p>I agree to the<a href="#" class="text-info small">Terms and Conditions</a></p>
-                            </div>
-                            <div class="col-md-6 text-right">
-                                <a href="#" class="text-info small">Help? Contact Support</a>
-                            </div>
-                        </div>
-                        <button class="btn btn-cons m-t-10" type="submit">Create Account</button>
-                    </form>
-                    <!--End of Register Form-->
-                    <div class="pull-bottom sm-pull-bottom">
-                        <div class="m-b-30 p-r-40 sm-m-t-20 sm-p-r-15 sm-p-b-40 clearfix">
-                            <div class="col-sm-12 text-right m-t-10">
-                                <p>
-                                    <small>Alternatively login using a <a href="#" class="text-info">Facebook</a> or <a href="#" class="text-info">Google</a> account.
-                        </small>
-                                </p>
                             </div>
                         </div>
                     </div>
-
+                    <div class="col-md-6 text-center">
+                        <a href="#" class="text-info small">Help? Contact Support</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 text-center col-sm-offset-3">
+                        <button class="btn btn-cons" type="submit">Create Account</button>
+                    </div>
+                </div>
+            </form>
+            <!--End of Register Form-->
+            <div class="pull-bottom sm-pull-bottom">
+                <div class="col-sm-12 text-center">
+                    <p><small>Alternatively login using a <a href="#" class="text-info">Facebook</a> or <a href="#" class="text-info">Google</a> account.</small></p>
                 </div>
             </div>
         </div>
     </div>
-
-
-
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -208,28 +199,13 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
                         <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                                <i class="fa fa-circle fa-stack-2x"></i>
-                                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                            </span>
-                            </a>
+                            <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
                         </li>
                         <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                            <i class ="fa fa-circle fa-stack-2x"></i>
-                                            <i class ="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                                        </span>
-                            </a>
+                            <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a>
                         </li>
                         <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                            <i class ="fa fa-circle fa-stack-2x"></i>
-                                            <i class ="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                        </span>
-                            </a>
+                            <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
                         </li>
                     </ul>
                     <p class="copyright text-muted">Copyright &copy; Project Ragnarok: State Of Mind 2016</p>
@@ -240,14 +216,11 @@
         </div>
         <!--end container-->
     </footer>
-
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/headeroom.js"></script>
-
     <script>
         jQuery(document).ready(function() {
             (function() {
@@ -270,5 +243,3 @@
         });
     </script>
 </body>
-
-</html>

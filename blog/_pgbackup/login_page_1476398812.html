@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Test Forum</title>
+        <!---Bootstrap-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!---Main Style -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="css/blogstyle.css" rel="stylesheet">
+        <!--Fonts-->
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!-- Navigation -->
+        <!--  removed role="navigation" by http://www.crispedge.com -->
+        <nav id="header" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!--Toggle navigation for mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        Menu
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Project Ragnarok</a>
+                </div>
+                <!-- The nav links - forms and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="login_page.html">Login</a>
+                        </li>
+                        <li>
+                            <a href="textarchive.html">MindSpace</a>
+                        </li>
+                        <li>
+                            <a href="#">ThoughtTalk</a>
+                        </li>
+                        <li>
+                            <a href="about_us.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="contact_us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- navbar-collapse -->
+            </div>
+            <!-- div -container -->
+        </nav>
+        <!--Blog Header with background image-->
+        <header class="intro-header" style="background-image: url('images/smiley-1171304_1920.jpg')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="site-heading">
+                            <h1>Project Ragnarok: The Archive</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container-sm-height">
+            <div class="row row-sm-height">
+                <div class="col-sm-12 col-sm-height col-middle">
+                    <h3>Sign into Project: Ragnarok</h3>
+                    <!--Start Login form-->
+                    <form id="form-login" role="form" action="">
+                        <!-- Form control -->
+                        <div class="form-group form-group-default">
+                            <label>Login</label>
+                            <div class="controls">
+                                <input type="email" name="userMail" placeholder="you@mail.com" class="form-control" required>
+                            </div>
+                        </div>
+                        <!-- End of Form Control -->
+                        <!-- Form Control 2 -->
+                        <div class="form-group form-group-default">
+                            <label>Password</label>
+                            <div class="controls">
+                                <input type="password" class="form-control" name="password" placeholder="*******" required>
+                            </div>
+                        </div>
+                        <!--End of form control 2 -->
+                        <!-- Form Control 3 -->
+                        <div class="row">
+                            <div class="col-md-6 no-padding">
+                                <div class="checkbox">
+                                    <input type="checkbox" value="1" id="checkbox1">
+                                    <label for="checkbox1 text-right">Keep Me Logged in</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <a href="sign_up.html" class="text-info small">Not Registered? Sign Up Here!</a>
+                            </div>
+                        </div>
+                        <!--End of Form Control 3 -->
+                        <button class="btn btn-cons m-t-10" type="submit">Sign In</button>
+                    </form>
+                    <!--END of Login Form -->
+                    <div class="pull-bottom sm-pull-bottom">
+                        <div class="m-b-30 p-r-80 sm-m-t-20 sm-p-r-15 sm-p-b-20 clearfix">
+                            <div class="col-sm-12 text-right m-t-10">
+                                <p><small>Alternatively login using a <a href="#" class="text-info">Facebook</a> or <a href="#" class="text-info">Google</a> account.</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of Header-->
+        <!---<body class="fixed-header">--->
+        <div class="register-container">
+</div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <ul class="list-inline text-center">
+                            <li>
+                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
+                            </li>
+                        </ul>
+                        <p class="copyright text-muted">Copyright &copy; Project Ragnarok: State Of Mind 2016</p>
+                    </div>
+                    <!--end footer -->
+                </div>
+                <!--end row -->
+            </div>
+            <!--end container-->
+        </footer>
+        <!-- Footer -->
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/headeroom.js"></script>
+        <script>
+        jQuery(document).ready(function() {
+            (function() {
+                var header = document.querySelector("#header");
+
+                if (window.location.hash) {
+                    header.classList.add("headroom--unpinned");
+                }
+
+                var headroom = new Headroom(header, {
+                    tolerance: {
+                        down: 10,
+                        up: 20
+                    },
+                    offset: 205
+                });
+                headroom.init();
+
+            }());
+        });
+    </script>
+    </body>
+</html>

@@ -1,78 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Test Forum</title>
-    <!---Bootstrap-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!---Main Style -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="css/blogstyle.css" rel="stylesheet">
-    <!--Fonts-->
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-    <!-- Navigation -->
-    <!--  removed role="navigation" by http://www.crispedge.com -->
-    <nav id="header" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!--Toggle navigation for mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar">
-          <span class="sr-only">Toggle navigation</span>
-          Menu<i class="fa fa-bars"></i>
-        </button>
-                <a class="navbar-brand" href="index.html">Project Ragnarok</a>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Test Forum</title>
+        <!---Bootstrap-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!---Main Style -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="css/blogstyle.css" rel="stylesheet">
+        <!--Fonts-->
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!-- Navigation -->
+        <!--  removed role="navigation" by http://www.crispedge.com -->
+        <nav id="header" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!--Toggle navigation for mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        Menu
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Project Ragnarok</a>
+                </div>
+                <!-- The nav links - forms and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="login_page.html">Login</a>
+                        </li>
+                        <li>
+                            <a href="textarchive.html">MindSpace</a>
+                        </li>
+                        <li>
+                            <a href="#">ThoughtTalk</a>
+                        </li>
+                        <li>
+                            <a href="about_us.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="contact_us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- navbar-collapse -->
             </div>
-            <!-- The nav links - forms and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-navbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="login_page.html">Login</a>
-                    </li>
-
-                    <li>
-                        <a href="textarchive.html">MindSpace</a>
-                    </li>
-
-                    <li>
-                        <a href="#">ThoughtTalk</a>
-                    </li>
-
-                    <li>
-                        <a href="about_us.html">About Us</a>
-                    </li>
-
-                    <li>
-                        <a href="contact_us.html">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- navbar-collapse -->
-        </div>
-        <!-- div -container -->
-    </nav>
-
-    <!--Blog Header with background image-->
-    <header class="intro-header" style="background-image: url('images/smiley-1171304_1920.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>Project Ragnarok: The Archive</h1>
-                        <hr class="small">
+            <!-- div -container -->
+        </nav>
+        <!--Blog Header with background image-->
+        <header class="intro-header" style="background-image: url('images/smiley-1171304_1920.jpg')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="site-heading">
+                            <h1>Project Ragnarok: The Archive</h1>
+                            <hr class="small">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- end of Header-->
-
-    <!-- Form 
+        </header>
+        <!-- end of Header-->
+        <!-- Form 
     <form action="" method="POST" id="form" class="topBefore">
 
         <fieldset>
@@ -92,21 +85,16 @@
         <button id="submit" type="submit">Send</button>
 
     </form>-->
-
-    <div class="register-container sm-p-30">
         <div class="container-sm-height">
             <div class="row row-sm-height">
                 <div class="col-sm-12 col-sm-height col-middle">
                     <h3>Contact Us</h3>
-                    <p>
-                        <small>
-                          Feel free to contact us and we hope to reply to your message as quickly as we can.  
-                        </small>
-                    </p>
+                    <p><small>
+                          Feel free to contact us and we hope to reply to your message as quickly as we can.  </small></p>
                     <!-- Start of Form Control 1-->
-                    <form id="form-register" class="p-t-15" role="form" action="">
+                    <form id="form-register" role="form" action="">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-2">
                                 <div class="form-group form-group-default">
                                     <label>Name</label>
                                     <input type="text" name="contactName" placeholder="Enter your Name" class="form-control">
@@ -114,7 +102,7 @@
                             </div>
                             <!-- End of the Form Control 1 -->
                             <!-- Start of Form Control 2 -->
-                            <div class="col-sm-6">
+                            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
                                 <div class="form-group form-group-default">
                                     <label>Email</label>
                                     <input type="email" name="contactName" placeholder="Enter your email address" class="form-control" required>
@@ -123,13 +111,13 @@
                         </div>
                         <!-- Start of the Form Control 3 -->
                         <div class="row">
-                            <div class="col-sm-12">
+                            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
                                 <label>Message</label>
                                 <textarea id="message" type="text" name="message" class="form-control"></textarea>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-12">
+                            <div class="col-sm-12 text-center">
                                 <button class="btn btn-default m-t-10" type="submit">Send</button>
                             </div>
                         </div>
@@ -137,57 +125,36 @@
                 </div>
             </div>
         </div>
-    </div>
-
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                                <i class="fa fa-circle fa-stack-2x"></i>
-                                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                            </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                            <i class ="fa fa-circle fa-stack-2x"></i>
-                                            <i class ="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                                        </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                            <i class ="fa fa-circle fa-stack-2x"></i>
-                                            <i class ="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                        </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted">Copyright &copy; Project Ragnarok: State Of Mind 2016</p>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <ul class="list-inline text-center">
+                            <li>
+                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
+                            </li>
+                        </ul>
+                        <p class="copyright text-muted">Copyright &copy; Project Ragnarok: State Of Mind 2016</p>
+                    </div>
+                    <!--end footer -->
                 </div>
-                <!--end footer -->
+                <!--end row -->
             </div>
-            <!--end row -->
-        </div>
-        <!--end container-->
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/headeroom.js"></script>
-
-    <script>
+            <!--end container-->
+        </footer>
+        <!-- Footer -->
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/headeroom.js"></script>
+        <script>
         jQuery(document).ready(function() {
             (function() {
                 var header = document.querySelector("#header");
@@ -208,7 +175,5 @@
             }());
         });
     </script>
-
-</body>
-
+    </body>
 </html>

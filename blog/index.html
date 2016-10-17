@@ -1,250 +1,732 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Test Forum</title>
-    <!---Bootstrap-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!---Main Style -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="css/blogstyle.css" rel="stylesheet">
-    <!--Fonts-->
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-    <!-- Navigation -->
-    <!--  removed role="navigation" by http://www.crispedge.com -->
-    <nav id="header" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!--Toggle navigation for mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar">
-          <span class="sr-only">Toggle navigation</span>
-          Menu<i class="fa fa-bars"></i>
-        </button>
-                <a class="navbar-brand" href="index.html">Project Ragnarok</a>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Blank Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+        <link href="blog_cards.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        <!--Fonts-->
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">-->
+    </head>
+    <body>
+        <header>
+            <div class="navbar-fixed">
+                <nav class="teal">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo">Project Raganarok</a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-button" href="#!" data-activates="dropdown1">Account<i class="material-icons right">arrow_drop_down</i> </a>
+                                <ul id="dropdown1" class="dropdown-content">
+                                    <li>
+                                        <a href="#!">one</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">two</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#!">three</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <!-- The nav links - forms and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-navbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="login_page.html">Login</a>
+        </header>
+        <div class="jumbotron text-center no-margin">
+            <div class="container">
+                <h1>Hello, world!</h1>
+                <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            </div>
+        </div>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-left pull-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn-default btn btn-lg btn-floating">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+                <ul class="nav navbar-nav text-uppercase flow-text">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Narratives <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Action</a>
+                            </li>
+                            <li>
+                                <a href="#">Another action</a>
+                            </li>
+                            <li>
+                                <a href="#">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">Separated link</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">One more separated link</a>
+                            </li>
+                        </ul>
                     </li>
-
-                    <li>
-                        <a href="textarchive.html">MindSpace</a>
-                    </li>
-
-                    <li>
-                        <a href="thoughttalk.html">ThoughtTalk</a>
-                    </li>
-
-                    <li>
-                        <a href="about_us.html">About Us</a>
-                    </li>
-
-                    <li>
-                        <a href="contact_us.html">Contact Us</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Thoughts <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Action</a>
+                            </li>
+                            <li>
+                                <a href="#">Another action</a>
+                            </li>
+                            <li>
+                                <a href="#">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">Separated link</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">One more separated link</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
-            <!-- navbar-collapse -->
-        </div>
-        <!-- div -container -->
-    </nav>
-
-    <!--Blog Header with background image-->
-    <header class="intro-header" style="background-image: url('images/smiley-1171304_1920.jpg')">
+        </nav>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>Project Ragnarok: The Archive</h1>
-                        <hr class="small">
+                <div class="col-md-4">
+                    <div class="page-header">
+                        <h2>Featured Posts</h2>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- end of Header-->
-
-
-
-    <!-- Main Blog Content -->
-    <div class="container">
-
-        <div class="row">
-            <!--Blog Entries Column -->
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
-                <!--Test Blog Post -->
-                <div class="post-preview">
-                    <a href="blog_post.html">
-
-                        <h2 class="post-title">
-                            Hello World! I'm new here
-                        </h2>
-                        <img class="img-responsive" src="http://placehold.it/900x300" alt="placeholder for image">
-                        <hr>
-                        <h3 class="post-subtitle">
-                            So my story begins in at
-                        </h3>
-                    </a>
-
-                    <p class="post-meta">
-                        <span class="glyphicon glyphicon-time"></span> Posted on date&time by <a href="#">User_name</a>
-                    </p>
-
-                </div>
-                <!--Page selection -->
-                <ul class="pager">
-                    <li class="previous">
-                        <a href="#">&larr; Older Posts</a>
-                    </li>
-
-                </ul>
-            </div>
-
-
-            <!--Blog Sidebar Widgets Column
-            <div class="col-md-4">
-
-                --Blog Search
-                <div class="well">
-                    <h4>Search</h4>
-                    <div class="input-group">
-                        <input type="text" class="form-control">
-                        <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">
-                        <span class="glyphicon glyphicon-search"></span>
-                        </button>
-                        </span>
-                    </div>
-                    --end of group
-                </div>
-
-            - Blog Categories -
-                <div class="well">
-                    <h4>Blog Categories</h4>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="#">Category Name</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Category Name</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Category Name</a>
-                                </li>
-
-                                <li>
-                                    <a href="#">Category Name</a>
-                                </li>
-                            </ul>
-                        </div>
-                        -- /.col-lg-6 --
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled">
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                    --Close Categories--
-                </div>
-                <!-- ends row -->
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
+                <div class="col-sm-6 col-md-4">
+                    <div class="card cus-cards medium hoverable darken-2 z-depth-1 transparent">
+                        <!--<div class="card-content black-text">
+                        <span class="card-title">Card Title</span>
+                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                    </div>-->
+                        <!-- Card header -->
+                        <div class="header">
+                            <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img2.jpg" width="200" />
+                            <div class="filter"></div>
+                            <div class="actions">
+                                <button class="btn btn-round">
+                                    Read more
+</button>
+                            </div>
+                            <div class="category">
+                                <h6 class="label label-danger">Category</h6>
+                            </div>
+                        </div>
+                        <!-- end of header -->
+                        <!-- Card Category -->
+                        <div class="content">
+                            <h4 class="title title-uppercase"><a href="#">Title</a></h4>
+                            <p class="description">Description</p>
+                        </div>
+                        <div class="filter">
+</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card cus-cards medium hoverable darken-2 z-depth-1 transparent">
+                        <!--<div class="card-content black-text">
+                        <span class="card-title">Card Title</span>
+                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                    </div>-->
+                        <!-- Card header -->
+                        <div class="header">
+                            <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img2.jpg" width="200" />
+                            <div class="filter"></div>
+                            <div class="actions">
+                                <button class="btn btn-round">
+                                    Read more
+</button>
+                            </div>
+                            <div class="category">
+                                <h6 class="label label-danger">Category</h6>
+                            </div>
+                        </div>
+                        <!-- end of header -->
+                        <!-- Card Category -->
+                        <div class="content">
+                            <h4 class="title title-uppercase"><a href="#">Title</a></h4>
+                            <p class="description">Description</p>
+                        </div>
+                        <div class="filter">
+</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="card cus-cards medium hoverable darken-2 z-depth-1 transparent">
+                        <!--<div class="card-content black-text">
+                        <span class="card-title">Card Title</span>
+                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                    </div>-->
+                        <!-- Card header -->
+                        <div class="header">
+                            <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img2.jpg" width="200" />
+                            <div class="filter"></div>
+                            <div class="actions">
+                                <button class="btn btn-round">
+                                    Read more
+</button>
+                            </div>
+                            <div class="category">
+                                <h6 class="label label-danger">Category</h6>
+                            </div>
+                        </div>
+                        <!-- end of header -->
+                        <!-- Card Category -->
+                        <div class="content">
+                            <h4 class="title title-uppercase"><a href="#">Title</a></h4>
+                            <p class="description">Description</p>
+                        </div>
+                        <div class="filter">
+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="pager">
                         <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                                <i class="fa fa-circle fa-stack-2x"></i>
-                                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                            </span>
-                            </a>
+                            <a href="#" class="pull-left">Previous</a>
                         </li>
                         <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                            <i class ="fa fa-circle fa-stack-2x"></i>
-                                            <i class ="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                                        </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                            <i class ="fa fa-circle fa-stack-2x"></i>
-                                            <i class ="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                        </span>
-                            </a>
+                            <a href="#" class="pull-right">Next</a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Project Ragnarok: State Of Mind 2016</p>
                 </div>
-                <!--end footer -->
             </div>
-            <!--end row -->
         </div>
-        <!--end container-->
-    </footer>
-
-    <!--</div>-->
-
-
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/headeroom.js"></script>
-
-    <script>
-        jQuery(document).ready(function() {
-            (function() {
-                var header = document.querySelector("#header");
-
-                if (window.location.hash) {
-                    header.classList.add("headroom--unpinned");
-                }
-
-                var headroom = new Headroom(header, {
-                    tolerance: {
-                        down: 10,
-                        up: 20
-                    },
-                    offset: 205
-                });
-                headroom.init();
-
-            }());
-        });
-    </script>
-
-
-
-</body>
-
-</html>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="page-header">
+                        <h2>Featured Thoughts&nbsp;</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-4">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="card darken-1 cus-cards transparent hoverable text-center" data-toggle="tab">
+                        <div class="category">
+                            <h6 class="label label-danger">Category</h6>
+                        </div>
+                        <span class="card-title">Feeling shit today</span>
+                        <div class="card-image"> 
+                            <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img2.jpg"> 
+                            <span class="card-title">Card Title</span> 
+                        </div>
+                        <div class="card-content description">
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div>
+                            <div class="card-action">
+                                <a href="#"><i class="fa fa-reply fa-lg"></i> 140</a>
+                                <a href="#"><i class="fa fa-lg fa-heart"></i> 2k</a>
+                                <a href="#"><i class="fa fa-lg fa-share-square-o"></i> 1k</a>
+                                <div class="card-content content">
+                                    <a href="#">
+                                        <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img9.jpg" width="48" alt="" class="rounded circle responsive-img valign" height="48"> Username
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-lg-4">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <div class="card darken-1 cus-cards transparent hoverable text-center" data-toggle="tab">
+                            <div class="category">
+                                <h6 class="label label-danger">Category</h6>
+                            </div>
+                            <span class="card-title">Feeling shit today</span>
+                            <div class="card-content description">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div>
+                                <div class="card-action">
+                                    <a href="#"><i class="fa fa-reply fa-lg"></i> 140</a>
+                                    <a href="#"><i class="fa fa-lg fa-heart"></i> 2k</a>
+                                    <a href="#"><i class="fa fa-lg fa-share-square-o"></i> 1k</a>
+                                    <div class="card-content content">
+                                        <a href="#">
+                                            <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img9.jpg" width="54" alt="" class="rounded circle responsive-img" height="54"> Username
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <div class="card darken-1 cus-cards transparent hoverable text-center" data-toggle="tab">
+                            <div class="category">
+                                <h6 class="label label-danger">Category</h6>
+                            </div>
+                            <span class="card-title">Feeling shit today</span>
+                            <div class="card-content description">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div>
+                                <div class="card-action">
+                                    <a href="#"><i class="fa fa-reply fa-lg"></i> 140</a>
+                                    <a href="#"><i class="fa fa-lg fa-heart"></i> 2k</a>
+                                    <a href="#"><i class="fa fa-lg fa-share-square-o"></i> 1k</a>
+                                    <div class="card-content content">
+                                        <a href="#">
+                                            <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img9.jpg" width="54" alt="" class="rounded circle responsive-img" height="54"> Username
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4">
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <div class="card darken-1 cus-cards transparent hoverable text-center" data-toggle="tab">
+                                <div class="category">
+                                    <h6 class="label label-danger">Category</h6>
+                                </div>
+                                <span class="card-title">Feeling shit today</span>
+                                <div class="card-image"> 
+                                    <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img2.jpg"> 
+                                    <span class="card-title">Card Title</span> 
+                                </div>
+                                <div class="card-content description">
+                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div>
+                                    <div class="card-action">
+                                        <a href="#"><i class="fa fa-reply fa-lg"></i> 140</a>
+                                        <a href="#"><i class="fa fa-lg fa-heart"></i> 2k</a>
+                                        <a href="#"><i class="fa fa-lg fa-share-square-o"></i> 1k</a>
+                                        <div class="card-content content">
+                                            <a href="#">
+                                                <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img9.jpg" width="48" alt="" class="rounded circle responsive-img valign" height="48"> Username
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-4">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="card darken-1 cus-cards transparent hoverable text-center" data-toggle="tab">
+                        <div class="category">
+                            <h6 class="label label-danger">Category</h6>
+                        </div>
+                        <span class="card-title">Feeling shit today</span>
+                        <div class="card-content description">
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div>
+                            <div class="card-action">
+                                <a href="#"><i class="fa fa-reply fa-lg"></i> 140</a>
+                                <a href="#"><i class="fa fa-lg fa-heart"></i> 2k</a>
+                                <a href="#"><i class="fa fa-lg fa-share-square-o"></i> 1k</a>
+                                <div class="card-content content">
+                                    <a href="#">
+                                        <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img9.jpg" width="54" alt="" class="rounded circle responsive-img" height="54"> Username
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="card darken-1 cus-cards transparent hoverable text-center" data-toggle="tab">
+                        <div class="category">
+                            <h6 class="label label-danger">Category</h6>
+                        </div>
+                        <span class="card-title">Feeling shit today</span>
+                        <div class="card-content description">
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div>
+                            <div class="card-action">
+                                <a href="#"><i class="fa fa-reply fa-lg"></i> 140</a>
+                                <a href="#"><i class="fa fa-lg fa-heart"></i> 2k</a>
+                                <a href="#"><i class="fa fa-lg fa-share-square-o"></i> 1k</a>
+                                <div class="card-content content">
+                                    <a href="#">
+                                        <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img9.jpg" width="54" alt="" class="rounded circle responsive-img" height="54"> Username
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-lg-4">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <div class="card darken-1 cus-cards transparent hoverable text-center" data-toggle="tab">
+                            <div class="category">
+                                <h6 class="label label-danger">Category</h6>
+                            </div>
+                            <span class="card-title">Feeling shit today</span>
+                            <div class="card-image"> 
+                                <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img2.jpg"> 
+                                <span class="card-title">Card Title</span> 
+                            </div>
+                            <div class="card-content description">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div>
+                                <div class="card-action">
+                                    <a href="#"><i class="fa fa-reply fa-lg"></i> 140</a>
+                                    <a href="#"><i class="fa fa-lg fa-heart"></i> 2k</a>
+                                    <a href="#"><i class="fa fa-lg fa-share-square-o"></i> 1k</a>
+                                    <div class="card-content content">
+                                        <a href="#">
+                                            <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img9.jpg" width="48" alt="" class="rounded circle responsive-img valign" height="48"> Username
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4">
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <div class="card darken-1 cus-cards transparent hoverable text-center" data-toggle="tab">
+                                <div class="category">
+                                    <h6 class="label label-danger">Category</h6>
+                                </div>
+                                <span class="card-title">Feeling shit today</span>
+                                <div class="card-content description">
+                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div>
+                                    <div class="card-action">
+                                        <a href="#"><i class="fa fa-reply fa-lg"></i> 140</a>
+                                        <a href="#"><i class="fa fa-lg fa-heart"></i> 2k</a>
+                                        <a href="#"><i class="fa fa-lg fa-share-square-o"></i> 1k</a>
+                                        <div class="card-content content">
+                                            <a href="#">
+                                                <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img9.jpg" width="54" alt="" class="rounded circle responsive-img" height="54"> Username
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <div class="card darken-1 cus-cards transparent hoverable text-center" data-toggle="tab">
+                                <div class="category">
+                                    <h6 class="label label-danger">Category</h6>
+                                </div>
+                                <span class="card-title">Feeling shit today</span>
+                                <div class="card-content description">
+                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div>
+                                    <div class="card-action">
+                                        <a href="#"><i class="fa fa-reply fa-lg"></i> 140</a>
+                                        <a href="#"><i class="fa fa-lg fa-heart"></i> 2k</a>
+                                        <a href="#"><i class="fa fa-lg fa-share-square-o"></i> 1k</a>
+                                        <div class="card-content content">
+                                            <a href="#">
+                                                <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img9.jpg" width="54" alt="" class="rounded circle responsive-img" height="54"> Username
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-4">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="card darken-1 cus-cards transparent hoverable text-center" data-toggle="tab">
+                        <div class="category">
+                            <h6 class="label label-danger">Category</h6>
+                        </div>
+                        <span class="card-title">Feeling shit today</span>
+                        <div class="card-content description">
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div>
+                            <div class="card-action">
+                                <a href="#"><i class="fa fa-reply fa-lg"></i> 140</a>
+                                <a href="#"><i class="fa fa-lg fa-heart"></i> 2k</a>
+                                <a href="#"><i class="fa fa-lg fa-share-square-o"></i> 1k</a>
+                                <div class="card-content content">
+                                    <a href="#">
+                                        <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img9.jpg" width="54" alt="" class="rounded circle responsive-img" height="54"> Username
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card darken-1 cus-cards transparent hoverable text-center" data-toggle="tab">
+                        <div class="category">
+                            <h6 class="label label-danger">Category</h6>
+                        </div>
+                        <span class="card-title">Feeling shit today</span>
+                        <div class="card-content description">
+                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div>
+                            <div class="card-action">
+                                <a href="#"><i class="fa fa-reply fa-lg"></i> 140</a>
+                                <a href="#"><i class="fa fa-lg fa-heart"></i> 2k</a>
+                                <a href="#"><i class="fa fa-lg fa-share-square-o"></i> 1k</a>
+                                <div class="card-content content">
+                                    <a href="#">
+                                        <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img9.jpg" width="54" alt="" class="rounded circle responsive-img" height="54"> Username
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-lg-4">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <div class="card darken-1 cus-cards transparent hoverable text-center" data-toggle="tab">
+                            <div class="category">
+                                <h6 class="label label-danger">Category</h6>
+                            </div>
+                            <span class="card-title">Feeling shit today</span>
+                            <div class="card-content description">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div>
+                                <div class="card-action">
+                                    <a href="#"><i class="fa fa-reply fa-lg"></i> 140</a>
+                                    <a href="#"><i class="fa fa-lg fa-heart"></i> 2k</a>
+                                    <a href="#"><i class="fa fa-lg fa-share-square-o"></i> 1k</a>
+                                    <div class="card-content content">
+                                        <a href="#">
+                                            <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img9.jpg" width="54" alt="" class="rounded circle responsive-img" height="54"> Username
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <div class="card darken-1 cus-cards transparent hoverable text-center" data-toggle="tab">
+                            <div class="category">
+                                <h6 class="label label-danger">Category</h6>
+                            </div>
+                            <span class="card-title">Feeling shit today</span>
+                            <div class="card-content description">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div>
+                                <div class="card-action">
+                                    <a href="#"><i class="fa fa-reply fa-lg"></i> 140</a>
+                                    <a href="#"><i class="fa fa-lg fa-heart"></i> 2k</a>
+                                    <a href="#"><i class="fa fa-lg fa-share-square-o"></i> 1k</a>
+                                    <div class="card-content content">
+                                        <a href="#">
+                                            <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img9.jpg" width="54" alt="" class="rounded circle responsive-img" height="54"> Username
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4">
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <div class="card darken-1 cus-cards transparent hoverable text-center" data-toggle="tab">
+                                <div class="category">
+                                    <h6 class="label label-danger">Category</h6>
+                                </div>
+                                <span class="card-title">Feeling shit today</span>
+                                <div class="card-image"> 
+                                    <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img2.jpg"> 
+                                    <span class="card-title">Card Title</span> 
+                                </div>
+                                <div class="card-content description">
+                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div>
+                                    <div class="card-action">
+                                        <a href="#"><i class="fa fa-reply fa-lg"></i> 140</a>
+                                        <a href="#"><i class="fa fa-lg fa-heart"></i> 2k</a>
+                                        <a href="#"><i class="fa fa-lg fa-share-square-o"></i> 1k</a>
+                                        <div class="card-content content">
+                                            <a href="#">
+                                                <img src="file:///Applications/Pinegrow%20Web%20Designer.app/Contents/Resources/app.nw/placeholders/img9.jpg" width="48" alt="" class="rounded circle responsive-img valign" height="48"> Username
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <ul class="list-inline text-center">
+                            <li>
+                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
+                            </li>
+                        </ul>
+                        <p class="copyright text-muted text-center">Copyright &copy; Project Ragnarok: State Of Mind 2016</p>
+                    </div>
+                    <!--end footer -->
+                </div>
+                <div class="container">
+                    <!--end row -->
+                </div>
+                <!--end container-->
+            </footer>
+            <!-- Bootstrap core JavaScript
+    ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="js/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="js/materialize.min.js"></script>
+            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+            <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>-->
+    </body>

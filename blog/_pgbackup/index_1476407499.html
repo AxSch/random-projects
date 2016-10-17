@@ -1,0 +1,200 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Test Forum</title>
+        <!---Bootstrap-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!---Main Style -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="css/blogstyle.css" rel="stylesheet">
+        <!--Fonts-->
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!-- Navigation -->
+        <!-- removed role="navigation" by http://www.crispedge.com -->
+        <nav id="header" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!--Toggle navigation for mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar">
+                        <span class="sr-only">Toggle navigation</span>Menu
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Project Ragnarok</a>
+                </div>
+                <!-- The nav links - forms and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="login_page.html">Login</a>
+                        </li>
+                        <li>
+                            <a href="textarchive.html">MindSpace</a>
+                        </li>
+                        <li>
+                            <a href="thoughttalk.html">ThoughtTalk</a>
+                        </li>
+                        <li>
+                            <a href="about_us.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="contact_us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- navbar-collapse -->
+            </div>
+            <!-- div -container -->
+        </nav>
+        <!--Blog Header with background image-->
+        <header class="intro-header" style="background-image: url('images/smiley-1171304_1920.jpg')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="site-heading">
+                            <h1>Project Ragnarok: The Archive</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end of Header-->
+        <!-- Main Blog Content -->
+        <div class="container">
+            <div class="row">
+                <!--Blog Entries Column -->
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <!--Test Blog Post -->
+                    <div class="post-preview">
+                        <a href="blog_post.html">
+                            <h2 class="post-title">
+                            Hello World! I'm new here</h2>
+                            <img class="img-responsive" src="http://placehold.it/900x300" alt="placeholder for image">
+                            <hr>
+                            <h3 class="post-subtitle">
+                            So my story begins in at</h3>
+                        </a>
+                        <p class="post-meta"><span class="glyphicon glyphicon-time"></span>Posted on date&amp;time by<a href="#">User_name</a></p>
+                    </div>
+                    <!--Page selection -->
+                    <ul class="pager">
+                        <li class="previous">
+                            <a href="#">← Older Posts</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Blog Sidebar Widgets Column <div class="col-md-4">
+
+                --Blog Search
+                <div class="well">
+                    <h4>Search</h4>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        </span>
+                    </div>
+                    --end of group
+                </div>
+
+            - Blog Categories -
+                <div class="well">
+                    <h4>Blog Categories</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">Category Name</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Category Name</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Category Name</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Category Name</a>
+                                </li>
+                            </ul>
+                        </div>
+                        -- /.col-lg-6 --
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    --Close Categories--
+                </div>
+                <!-- ends row -->
+            </div>
+        </div>
+        <!-- Footer -->
+        <!--</div>-->
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/headeroom.js"></script>
+        <script>
+      jQuery(document).ready(function() {
+                (function() {
+                    var header = document.querySelector("#header");
+    
+                    if (window.location.hash) {
+                        header.classList.add("headroom--unpinned");
+                    }
+    
+                    var headroom = new Headroom(header, {
+                        tolerance: {
+                            down: 10,
+                            up: 20
+                        },
+                        offset: 205
+                    });
+                    headroom.init();
+    
+                }());
+            });
+    </script>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <ul class="list-inline text-center">
+                            <li>
+                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
+                            </li>
+                        </ul>
+                        <p class="copyright text-muted">Copyright &copy; Project Ragnarok: State Of Mind 2016</p>
+                    </div>
+                    <!--end footer -->
+                </div>
+                <!--end row -->
+            </div>
+            <!--end container-->
+        </footer>
+    </body>
+</html>
