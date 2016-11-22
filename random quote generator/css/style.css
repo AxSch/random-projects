@@ -1,0 +1,31 @@
+.main-content {
+    margin-top: 150px;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    font-family: 'Quicksand', sans-serif;
+    background-color: black;
+    letter-spacing: 0.125em;
+}
+
+h4,
+h3 {
+    font-family: 'Eczar', serif;
+}
+
+.pokeProfile {
+    background-color: rgb(249, 174, 184);
+    color: black;
+}
+
+.poke-heading {
+    background-color: rgb(249, 174, 184);
+    color: black;
+    padding-top: 2px;
+}
+
+.pokeStats {
+    list-style: none;
+}
