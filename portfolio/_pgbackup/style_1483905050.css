@@ -1,0 +1,62 @@
+
+
+.jumbotron
+{
+    height: 400px;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.91);
+    background-image: url('images/The_KiloTeam');
+    background-position: right;
+    color: rgba(255, 255, 255, 0.94);
+    margin-bottom: 0px;
+}
+
+null
+{
+    color: #fdfdfd;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#intro
+{
+    height: 800px;
+}
+
+#service
+{
+    background-color: rgb(92, 98, 109);
+    height: 800px;
+}
+
+#skills
+{
+    height: 800px;
+}
+
+#team
+{
+    background-color: rgb(92, 98, 109);
+    height: 800px;
+}
+
+#foot
+{
+    height: 150px;
+}
+
+#timeline
+{
+    height: 800px;
+}
+
+#contact-form
+{
+    height: 600px;
+}
+
+#portfolio
+{
+    height: 600px;
+}
+

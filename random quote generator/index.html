@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>Random Pokemon Generator</title>
+    <title>Random Quote Generator</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Eczar|Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Eczar|Quicksand|VT323" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -15,89 +15,30 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="panel panel-blog text-center main-content">
-                    <div class="panel panel-heading pokeProfile">
-                        <h4 class="pokeName">Pokemon name - No.</h4>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <img class="img-responsive" src="#" alt="">
-                            </div>
-                        </div>
-                    </div>
                     <div class="panel-body">
 
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h4 class="poke-heading">Profile</h4>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ul class="pokeStats pull-left">
-                                    <li><b>Height: </b></li>
-                                    <li><b>Weight: </b></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6 pull-right">
-                                <ul class="pokeStats pull-left">
-                                    <li><b>Type: </b></li>
-                                    <li><b>Sex: </b></li>
-                                </ul>
-                            </div>
-                        </div>
+                        <blockquote class="quote">Some text for testing</blockquote>
+                        <p class="small pull-right author">Name, Date</p>
+                    </div>
 
-                        <p class="pokeDescript">test</p>
-                        <blockquote>Something the pokemon says</blockquote>
-
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h3 class="poke-heading">Evolution:</h3>
-                                <ul class="list-inline pokeEvo">
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <span class="pull-left">
-                                <button id="pokeShare">Share</button>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span>
+                                <button id="quotShare">Share</button>
                             </span>
-                                <span class="pull-right">
-                                <button id="pokeRand">Randomize?!?</button>
+                            <span>
+                                <button id="quotRand">Randomize?!?</button>
                             </span>
-                                <span class="pull-right">
-                                <button id = "pokeNext">Click for next</button>
-                            </span>
-                                <span class="pull-left">
-                                <button id="pokePrev">Click for previous</button>
-                            </span>
-                                <span>
-                                <button id="pokeTest">Click for test</button>
-                            </span>
-
-
-                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
+
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/pokemon.js"></script>
-    <!-- <script>
-        $(document).ready(function() {
-            $("#pokeTest").on("click", function(json) {
-                $.getJSON('http://pokeapi.co/api/v2/generation/1/', function(json) {
-                    $(".pokeDescript").html(JSON.stringify(json));
-                })
-            });
-        });
-    </script>-->
+    <script src="js/quote.js"></script>
 
 </body>
 

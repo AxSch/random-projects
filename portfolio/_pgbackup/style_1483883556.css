@@ -1,0 +1,25 @@
+
+
+.jumbotron
+{
+    height: 400px;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.91);
+    background-image: url('images/The_KiloTeam');
+    background-position: right;
+    color: rgba(255, 255, 255, 0.94);
+    margin-bottom: 0px;
+}
+
+null
+{
+    color: #fdfdfd;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#intro
+{
+    height: 800px;
+}
+
