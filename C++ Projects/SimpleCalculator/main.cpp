@@ -46,6 +46,40 @@ Token_stream ts;
 
 //-------------------------------------------------
 
+/*
+  Grammar:
+ 
+    Expression:
+        Term
+        Expression '+' Term
+        Expression '-' Term
+ 
+    Term:
+        Primary
+        Term '*' Primary
+        Term '/' Primary
+        Term '%' Primary
+ 
+    Primary:
+        Number
+        '{' Expression '}
+        '(' Expression ')'
+
+    Number:
+        floating-point literal
+ 
+ */
+
+/*
+ Grammar functions used by the calculator:
+    1. expression() is used to handle addition & subtraction
+    2. term() is used to handle multiplication, division & modulo
+    3. primary() is used to handle numbers, parentheses and curly braces
+ */
+ 
+double expression();
+double term();
+double primary();
 
 int main() {
     cout << "Hello, and welcome to my simple calculator program!\n"
