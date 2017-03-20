@@ -44,7 +44,7 @@ private:
 Token_stream ts;
 
 //-------------------------------------------------
-
+// initilise the expression() so that primary() can use it
 double expression();
 /*
   Grammar:
@@ -137,7 +137,7 @@ double term() {
                     double rounding = round(primary());
                     int mod_num = (int)rounding;
                     if(mod_num == 0)error("Cannot modulo by Zero");
-                    user_expression %= mod_num;
+                    (int)user_expression %= mod_num;
                     t = ts.get();
                     break;
                 }
