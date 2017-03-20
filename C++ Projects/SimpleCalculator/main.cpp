@@ -76,10 +76,42 @@ Token_stream ts;
     2. term() is used to handle multiplication, division & modulo
     3. primary() is used to handle numbers, parentheses and curly braces
  */
- 
+
 double expression();
 double term();
 double primary();
+
+//Expression() function definition
+double expression() {
+    /*
+        1. Call term()
+        2. Retrieve token and evaluate it
+        3. Return the result
+     */
+    
+    double user_expression = term();
+    Token t = ts.get();
+    while(true){
+        switch(t.type_token){
+                
+            case '+': //Checks for a token with type '+'
+                user_expression += term(); //Evaulates addition
+                t = ts.get(); //Get the next token from the stream
+                break;
+            
+            case '-':
+                user_expression -= term();//Same as above but for subtraction
+                t = ts.get();
+                break;
+                
+            default:
+                ts.putback(t); //Once there are no more tokens matching the case above, the token t is putback into the stream
+                return user_expression; //Return the result(Hopefully the correct one)
+        }
+    }
+    
+}
+//-------------------------------------------------
 
 int main() {
     cout << "Hello, and welcome to my simple calculator program!\n"
