@@ -113,6 +113,7 @@ double expression() {
 }
 //-------------------------------------------------
 
+//Term() function definition
 double term() {
     double user_expression = primary();
     Token t = ts.get();
@@ -150,7 +151,35 @@ double term() {
 //-------------------------------------------------
 
 
+//Primary() function definition
 
+double primary(){
+    double user_expression = expression();
+    Token t = ts.get();
+    while(true){
+        switch(t.type_token){
+            case '{':
+                {
+                    double d = expression();
+                    t = ts.get();
+                    if(t.type_token != '}')error("Expected '}'");
+                    return d;
+                }
+            case '(':
+                {
+                    double d = expression();
+                    t = ts.get();
+                    if(t.type_token != '}')error("Expected ')'");
+                    return d;
+                }
+            case '8':
+                return t.value_token;
+            
+            default:
+                error("primary expected");
+        }
+    }
+}
 int main() {
     cout << "Hello, and welcome to my simple calculator program!\n"
          << "Here are the instructions for using the calculator:\n"
