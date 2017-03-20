@@ -34,11 +34,54 @@ public:
     void putback(Token t);
     
 private:
-    bool full {false};
+    bool full{false};
     Token buffer;
     
 };
 
+//------------------------------------------------
+//1st member function of Token_stream - putback()
+/*
+ 1. Takes argument, token t and puts it back into the stream
+ 2. Flag(full) is switched to true if a token is in the buffer
+*/
+void Token_stream::putback(Token t){
+    if(full)error("putback() into a full buffer!");
+    buffer = t;
+    full = true;
+}
+//-------------------------------------------------
+//2nd member function of Token_stream - get()
+/*
+ 1. checks if buffer is full
+ 2. 
+*/
+Token Token_stream::get(){
+    if(full){
+        full = false;
+        return buffer;
+    }
+    
+    char ch;
+    cin >> ch;
+
+    switch(ch){
+        case ';':
+        case 'q':
+        case '(': case ')': case '+': case '-': case '/':
+            return Token{ch};
+        case '.': case '0': case '1': case '2': case '3': case '4': case '5': case '6':
+        case '7': case '8': case '9':
+            {
+                cin.putback(ch);
+                double val;
+                cin >> val;
+                return (char)Token{'8', val};
+            }
+        default:
+            error("Bad token");
+    }
+}
 //-------------------------------------------------
 //Initialising a token stream
 Token_stream ts;
@@ -180,10 +223,28 @@ double primary(){
         }
     }
 }
+//------------------------------------------------
+
 int main() {
-    cout << "Hello, and welcome to my simple calculator program!\n"
+try{
+    while(cin){
+         cout << "Hello, and welcome to my simple calculator program!\n"
          << "Here are the instructions for using the calculator:\n"
          << "Enter an expression that you want to evaluate followed by a semi-colon, ';' to finish the expression\n"
          << "To terminate the program, use 'q' for 'QUIT'\n";
+    }
+
+}
+catch(exception& e){
+    cerr<<e.what()<<'\n';
+    keep_window_open();
+    return 1;
+}
+catch(...){
+    cerr<< e.what()<<endl;
+    keep_window_open();
+    return 2;
+}
+    
     return 0;
 }
