@@ -21,6 +21,31 @@ public:
 };
 //-------------------------------------------------
 
+//Token Stream declaration
+/*
+ 1. Uses Token to get the token data
+ 2. Uses a buffer to store token using putback()
+ 3. bool is used as a flag to indicate whether there is a token in the buffer or not
+ */
+
+class Token_stream {
+    
+public:
+    Token get();
+    void putback(Token t);
+    
+private:
+    bool full {false};
+    Token buffer;
+    
+};
+
+//-------------------------------------------------
+//Initialising a token stream
+Token_stream ts;
+
+//-------------------------------------------------
+
 
 int main() {
     cout << "Hello, and welcome to my simple calculator program!\n"
