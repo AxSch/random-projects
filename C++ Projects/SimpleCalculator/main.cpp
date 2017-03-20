@@ -1,4 +1,3 @@
-/
 //  main.cpp
 //  Chapter6Exercise2
 //
@@ -110,6 +109,42 @@ double expression() {
         }
     }
     
+}
+//-------------------------------------------------
+
+double term() {
+    double user_expression = primary();
+    Token t = ts.get();
+    while(true){
+        switch (t.type_token)
+        {
+            case '*':
+                user_expression *= primary();
+                t = ts.get();
+                break;
+            
+            case '/':
+                {
+                    double divis_expression = primary();
+                    if(divis_expression == 0) error("Division By Zero");
+                    user_expression /= divis_expression;
+                    t = ts.get();
+                    break;
+                }
+            case '%':
+                {
+                    double rounding = round(primary());
+                    int mod_num = (int)rounding;
+                    if(mod_num == 0)error("Cannot modulo by Zero");
+                    user_expression %= mod_num;
+                    t = ts.get();
+                    break;
+                }
+        default:
+        ts.putback(t);
+        return user_expression;
+        }
+    }
 }
 //-------------------------------------------------
 
