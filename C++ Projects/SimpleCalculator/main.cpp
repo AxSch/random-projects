@@ -45,6 +45,7 @@ Token_stream ts;
 
 //-------------------------------------------------
 
+double expression();
 /*
   Grammar:
  
@@ -147,6 +148,8 @@ double term() {
     }
 }
 //-------------------------------------------------
+
+
 
 int main() {
     cout << "Hello, and welcome to my simple calculator program!\n"
